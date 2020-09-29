@@ -1,0 +1,114 @@
+
+	// start .sDates
+	.sDates {
+		--sPT: #{rem(10)};
+		--sTPB: #{rem(70)};
+		--sPB: #{rem(0)};
+		img{
+			@include media-breakpoint-up(sm) {
+				max-width: none;
+				position: absolute;
+				bottom: 0;
+			}
+			max-width: 100%;
+		}
+		&__row{
+			@include media-breakpoint-up(xl) {
+
+				@include roww(rem(110));
+			}
+			@include media-breakpoint-up(md) {
+
+				@include roww(rem(60));
+				margin-bottom: rem(65);
+			}
+			margin-bottom: rem(35);
+			
+			&:nth-child(odd){
+				img{
+					@include media-breakpoint-up(xl){
+
+						right: rem(40);
+					}
+							@include media-breakpoint-up(sm){
+
+								right: 15px;
+							}
+				}
+			}
+			&:nth-child(even){
+					@include media-breakpoint-up(sm){
+
+						flex-direction: row-reverse;
+					}
+				img{
+					@include media-breakpoint-up(xl){ 
+						left: rem(30);
+					}
+					@include media-breakpoint-up(sm){ 
+						left: 15px;
+					}
+				}
+				.sDates__col-text{
+
+				}
+				.sDates__inner{
+					@include media-breakpoint-up(sm){
+						
+						margin-left: auto;
+						max-width: rem(220);
+					}
+				}
+			}
+		}
+		&__inner{
+			max-width: rem(320);
+		}
+		&__col{
+			position: relative;
+		}
+		&__col-text{
+			// padding: rem(120) 0;
+					@include media-breakpoint-up(sm){
+
+						padding-top: rem(60);
+						padding-bottom: rem(30);
+					}
+					padding-top: rem(20);
+		}
+		&__title{
+			color: $danger;
+			@include rfs(44px);
+			font-weight: bold;
+			margin-bottom: rem(10);
+			line-height: 1;
+		}
+		&__time{
+
+			margin-bottom: rem(20);
+		}
+		&__group{
+			margin-bottom: rem(30);
+		}
+		&__group-title{
+			@include rfs(24px);
+			font-weight: bold;
+		}
+		
+		&__group-text{
+			@include rfs(20px);
+		}
+
+
+		 
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.sDates

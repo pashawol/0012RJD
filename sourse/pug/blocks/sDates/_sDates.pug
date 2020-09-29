@@ -1,0 +1,25 @@
+mixin sDates()
+	// start sDates
+	+b.SECTION.sDates.section#sDates&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Даты проведение онлайн-выставок
+			div
+				mixin item(i, t, t1, t2 , t3 , t4, tt)
+					+e.row.row
+						+e.col.col
+							img(src=`img/svg/sdates-${i}.svg` loading="lazy", alt="")
+						+e.col-text.col-sm-4
+							+e.inner
+								+e.title= t
+								+e.time= tt
+								+e.group
+									+e.group-title= t1
+									+e.group-text= t2
+								+e.group
+									+e.group-title= t3
+									+e.group-text= t4
+				+item("1",'Россия','16 октября','с 14.00 до 20.00','17 октября ','с 12.00 до 20.00','время г. Москвы/ UTC+3')
+				+item("2",'Казахстан','20 октября','с 14.00 до 20.00','21 октября ','с 14.00 до 20.00','время г. Нур-Султана/ UTC+6')
+				+item("3",'Азербайджан','23 октября','с 14.00 до 20.00','24 октября ','с 12.00 до 20.00','время г. Баку/ UTC+4')
+	// end sDates

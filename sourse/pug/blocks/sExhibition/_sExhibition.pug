@@ -1,0 +1,72 @@
+mixin sExhibition()
+	// start sExhibition
+	+b.sExhibition.section#sExhibition&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Выставка вузов италии
+				
+			.row
+				mixin item(i, p) 
+					+e.col.col-xl.col-lg-3.col-md-4.col-6
+						+e.item(href="#")
+							+pic(`Exhibition-${i}.png`,'',0)
+							+e.DIV.text!= p
+					// /+e.col.col-xl.col-lg-3.col-md-4.col-6
+				+item(`1`,`UNIVERSITÀ DEGLI STUDI DI MILANO`)
+				+item(`2`,`UNIVERSITÀ CATTOLICA DEL SACRO CUORE (UCSC)`)
+				+item(`3`,`POLITECNICO DI MILANO`)
+				+item(`4`,`UNIVERSITÀ DEGLI STUDI DI PISA`)
+				+item(`5`,`UNIVERSITÀ IUAV DI VENEZIA`)
+				+item(`6`,`LUISS GUIDO CARLI (LUISS UNIVERSITY)`)
+				+item(`7`,`UNIVERSITÀ PER STRANIERI DI SIENA`)
+				+item(`8`,`UNIVERSITÀ COMMERCIALE LUIGI BOCCONI (UNIVERSITÀ BOCCONI)`)
+				+item(`9`,`UNIVERSITÀ CA’ FOSCARI VENEZIA`)
+				+item(`10`,`UNIVERSITÀ IULM – MILANO`)
+				+item(`11`,`UNIVERSITÀ DEGLI STUDI DI MACERATA`)
+				+item(`12`,`UNIVERSITÀ <br> DI SIENA`)
+				+item(`13`,`UNIVERSITÀ DEGLI STUDI DI PADOVA`)
+				+item(`14`,`UNIVERSITÀ <br> LUMSA`)
+				+item(`15`,`ALMA LA SCUOLA INTERNAZIONALE DI CUCINA ITALIANA`) 
+	// end sExhibition
+mixin sExhibition6()
+	// start sExhibition
+	+b.sExhibition#sExhibition&attributes(attributes)
+		.container
+			+e.filter
+				.row
+					+e.col.col-xl-auto.mb-0
+						+b.search-block
+							+input('Поиск по учебным заведениям')
+							+e.btn(type="submit")
+								+icon('search')
+					+e.col-toggle.col-md.d-lg-block
+						+input("Не выбрано",'select','Город')
+					+e.col-toggle.col-md.d-lg-block
+						+input("Не выбрано",'select','Направление образования') 
+				+e.toggle.d-lg-none
+					span.show Больше фильтров
+					span.hide Скрыть
+			.row
+				mixin item(i, p) 
+					+e.col.col-md-4.col-6
+						+e.item(href="#")
+							+pic(`Exhibition-${i}.png`,'',0)
+							+e.DIV.text!= p
+					// /+e.col.col-md-4.col-6
+				+item(`1`,`UNIVERSITÀ DEGLI STUDI DI MILANO`)
+				+item(`2`,`UNIVERSITÀ CATTOLICA DEL SACRO CUORE (UCSC)`)
+				+item(`3`,`POLITECNICO DI MILANO`)
+				+item(`4`,`UNIVERSITÀ DEGLI STUDI DI PISA`)
+				+item(`5`,`UNIVERSITÀ IUAV DI VENEZIA`)
+				+item(`6`,`LUISS GUIDO CARLI (LUISS UNIVERSITY)`)
+				+item(`7`,`UNIVERSITÀ PER STRANIERI DI SIENA`)
+				+item(`8`,`UNIVERSITÀ COMMERCIALE LUIGI BOCCONI (UNIVERSITÀ BOCCONI)`)
+				+item(`9`,`UNIVERSITÀ CA’ FOSCARI VENEZIA`)
+				+item(`10`,`UNIVERSITÀ IULM – MILANO`)
+				+item(`11`,`UNIVERSITÀ DEGLI STUDI DI MACERATA`)
+				+item(`12`,`UNIVERSITÀ <br> DI SIENA`)
+				+item(`13`,`UNIVERSITÀ DEGLI STUDI DI PADOVA`)
+				+item(`14`,`UNIVERSITÀ <br> LUMSA`)
+				+item(`15`,`ALMA LA SCUOLA INTERNAZIONALE DI CUCINA ITALIANA`) 
+		+pugin()
+	// end sExhibition

@@ -1,0 +1,12 @@
+mixin sVideo()
+	// start sVideo
+	+b.sVideo.section#sVideo&attributes(attributes)
+		+e.bg
+		.container
+			+b.section-title.text-center
+				h2 Обращение основателя 
+			+e.wrap
+				+e.video(href="https://www.youtube.com/watch?v=p1BX1K7r0dU" data-fancybox="video"  ).bg-wrap
+					+pic("video",'bg')(class="picture-bg") 
+				+e.caption Обращение основателя  
+	// end sVideo

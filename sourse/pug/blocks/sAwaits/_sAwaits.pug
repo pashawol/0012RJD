@@ -1,0 +1,17 @@
+mixin sAwaits()
+	// start sAwaits
+	+b.SECTION.sAwaits.section#sAwaits&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Что ждет Вас на&nbsp;выставке
+				
+			.row
+				mixin item(i, p) 
+					+e.col.col-lg-4.col-sm-6 
+						+e.img-wrap
+							img(src=`img/svg/sAwaits-i-${i}.svg`, alt="")
+						+e.text!= p
+				+item("1",`Онлайн-презентации   <br>     вузов`)
+				+item("2",`Индивидуальные встречи с&nbsp;представителями <br> вузов`)
+				+item("3",`Онлайн-чат`)
+	// end sAwaits

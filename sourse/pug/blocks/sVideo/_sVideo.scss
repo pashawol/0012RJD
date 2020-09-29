@@ -1,0 +1,106 @@
+
+	// start .sVideo
+	.sVideo {
+		text-align: center;
+			 @include media-breakpoint-up(sm) {
+
+				 --sPT: #{rem(165)};
+				}
+		position: relative;
+		z-index: 2;
+		&__bg{
+			position: absolute;
+			z-index: -1;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			opacity: 0.23;
+
+			&::before,
+			&::after{
+				content: '';
+				background-position: top center;
+				background-size: contain;
+				background-repeat: no-repeat;
+				// width: 100%;
+				min-width: 100%;
+				width: 200%;
+				@include media-breakpoint-up(sm){
+					width: rem(1920);
+
+						 height: rem(525);
+						}
+						height: rem(425);
+				@include a-cent(x);
+			top: 0;
+			z-index: -1;
+		}
+		&::after{ 
+			background-image: url(../img/svg/video-bg.svg);
+		}
+		&::before{ 
+			z-index: -1;
+			@include media-breakpoint-up(sm){
+				
+				height: rem(800);
+				top: rem(515);
+			}
+			height: rem(400);
+					top: rem(415);
+			background: linear-gradient(180deg, #7EA98F 0%, rgba(126, 169, 143, 0) 100%);
+		}
+	}
+		&__wrap{ 
+			max-width: rem(958);
+			margin-left: auto;
+			margin-right: auto;
+		}
+		&__video {
+			@include block(958,538);
+			@include mt;
+			margin-bottom: rem(35);
+			&:hover{
+			 
+			 }
+			 &::after{
+				 content: url(../img/svg/play.svg);
+				 @include a-cent;
+				 @include media-breakpoint-up(sm) {
+					 width: rem(84);
+					 height: rem(84);
+
+					}
+					// padding-top: rem(3);
+					padding-top: rem(4);
+					// padding-left: rem(4);
+					padding-left: rem(5);
+				 width: rem(60);
+				 height: rem(60);
+				 border-radius: 50%;
+				 @extend .btn;
+				 @extend .btn-primary;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 0;
+
+			 }
+		 
+	}
+	&__caption{
+		@include rfs(24px); 
+		line-height: 110%;
+		font-weight: bold;
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.sVideo

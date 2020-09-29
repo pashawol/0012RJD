@@ -1,0 +1,17 @@
+mixin sLogos()
+	// start sLogos
+	+b.SECTION.sLogos.section#sLogos&attributes(attributes)
+		.container 
+			+b.section-title.text-center
+				h2 Организаторы и&nbsp;партнеры выставки
+			.row
+				mixin item(i)
+					+e.col.col-lg-auto.col-6
+						//- (class="wow  animate__fadeInUp "   )
+						noscript(class="loading-lazy")
+							img.lazy.res-i(src=`img/${i}` loading="lazy", alt="")
+				+item('@2x/logo-1.png')
+				+item('svg/logo.svg')
+				+item('@2x/logo-3.png')
+				+item('@2x/logo-4.png') 
+	// end sLogos

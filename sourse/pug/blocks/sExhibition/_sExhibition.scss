@@ -1,0 +1,97 @@
+
+	.main-page .sExhibition {
+		 &__col {
+		 	@include media-breakpoint-up(xl) {
+
+		 		flex: 0 0 20%;
+		 		max-width: 20%;
+		 	}
+ 
+		 }
+		 &::after {
+		 	content: url(../img/@2x/map.png);
+		 	position: absolute;
+		 	top: 92%;
+		 	left: 75%;
+		 	z-index: -1;
+		 }
+		 &__item { 
+			 font-size: 1rem;
+			 @extend .text-secondary;
+			 font-size: 11px;
+		 }
+	}
+	// start .sExhibition
+	.sExhibition {
+		 position: relative;
+		 z-index: 2;
+			&__input{
+				 background: #E1E4E9;
+				 border-color: #E1E4E9;
+			}
+		//  padding-top: 0;
+			@include media-breakpoint-up(md) {
+
+				--sPT: #{rem(60)};
+				--sPB: #{rem(60)};
+				--sTPB: #{rem(70)};
+			}
+				.container{
+
+			position: relative;
+			
+		}
+		 &__item{
+			  text-align: center;
+			 display: block;
+			 @extend .text-body;
+			 font-weight: bold;
+			 	 @include media-breakpoint-up(md) {
+
+						font-size: rem(20);
+					}
+					font-size: rem(14);
+			
+
+			 &:hover{
+				 opacity: .6;
+			 }
+		 }
+		 .row{
+			 justify-content: center;
+		 }
+		 picture{
+			 vertical-align: middle;
+			 @include media-breakpoint-up(md) {
+				 
+				 margin-bottom: rem(30);
+				 height: rem(180);
+				 line-height: rem(180);
+				}
+				height: rem(120);
+				line-height: rem(120);
+					margin-bottom: rem(15);
+			 img{
+				 max-height: 100%;
+			 }
+		 }
+		 &__col{
+			 
+					@include media-breakpoint-up(md) {
+
+						margin-bottom: rem(50);
+					}
+					margin-bottom: rem(30);
+				
+		 }
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.sExhibition

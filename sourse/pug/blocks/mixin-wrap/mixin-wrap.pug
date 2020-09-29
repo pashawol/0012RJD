@@ -1,0 +1,175 @@
+include ../../_assets/bemto/bemto
+- set_bemto_settings({ modifier: "--" })
+include components/menu.pug
+include components/icon.pug
+include components/breadcrumb.pug
+include components/pugination.pug
+include components/soc.pug
+include components/pic.pug
+include components/btn.pug
+
+
+mixin arrow()
+	.swiper-button-hand.swiper-button-hand-prev.swiper-button-prev
+		+icon('chevron-left')
+	.swiper-button-hand.swiper-button-hand-next.swiper-button-next
+		+icon('chevron-right')
+//- /arrow for swiper-slider
+
+mixin ie11()
+	//- modernizer and for ie11
+	 
+	<!--[if lt IE 11]><p   class="browsehappy container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p><![endif]-->
+
+
+mixin page-title(t)
+	.container
+		+b.page-title
+			.row 
+				.col
+					h1= t
+				block
+
+mixin reg(b="Зарегистрироваться")
+	+b.form-wrap(class="form-wrap--border")
+		.container
+			.h6.mb-4 Пожалуйста, заполните анкету латинскими буквами
+				br
+				| Please fill in the application form with Latin letters
+
+			.row
+				.col
+					form(action='/file-upload'  enctype="multipart/form-data")
+						//- .dropzone(action='/file-upload'  enctype="multipart/form-data")
+						.row
+							.col-lg-6
+								+input("",'text','Фамилия / Surname')
+							.col-lg-6
+								+input("",'text','Имя / Name')
+							.col-lg-6
+								+input("",'tel','Телефон / Phone Number')
+							.col-lg-6
+								+input("",'email','Почта/E-mail')
+							
+							.col-lg-6
+								+e.input-wrap.form-group
+									label
+										+b.SPAN.input-title В каком году планируете поступать? / When do you plan to commence your studies?
+
+										+e.SELECT.input.form-control
+											option  2021
+											option 2022
+											option 2023 и позднее
+							.col-lg-6
+								+e.input-wrap.form-group
+									label
+										+b.SPAN.input-title Какое у Вас образование?/ What is your Education Level?
+										+e.SELECT.input.form-control
+											option аттестат 11 классов
+											option средне-специальное образование
+											option аттестат 11 классов+один курс вуза 
+											option бакалавриат
+											option магистратура
+						 
+							.col-lg-6
+								+e.input-wrap.form-group
+									+b.SPAN.input-title Каким языком вы владеете? / What language are you proficient in?
+									.row
+										.col-auto
+											+in-c()
+												+e.SPAN.text английский
+										.col-auto
+											+in-c()
+												+e.SPAN.text итальянский
+							.col-lg-6 
+								+e.input-wrap.form-group
+									label
+										+b.SPAN.input-title Страна проживания / Country of residence
+										+e.SELECT.input.form-control
+											option Россия
+											option Казахстан
+											option Азербайджан
+							.col-lg-12
+								+e.input-wrap.form-group
+									label
+										+b.SPAN.input-title Какое направление вас интересует? / What field of studies are you interested in?
+										+e.SELECT.input.form-control
+											option ЭКОНОМИКА, ФИНАНСЫ, УПРАВЛЕНИЕ БИЗНЕСОМ/ ECONOMICS, FINANCE, BUSINESS MANAGEMENT
+											option ПОЛИТОЛОГИЯ, МЕЖДУНАРОДНЫЕ ОТНОШЕНИЯ/ POLITICAL SCIENCE, INTERNATIONAL RELATIONS
+											option ЮРИСПРУДЕНЦИЯ/ LAW AND LEGAL STUDIES
+											option ИНФОРМАТИКА И КИБЕРБЕЗОПАСНОСТЬ/ COMPUTER SCIENCES AND CYBERSECURITY
+											option АРХИТЕКТУРА И СТРОИТЕЛЬСТВО/ ARCHITECTUR
+											option ИНЖЕНЕРНОЕ ДЕЛО/ ENGINEERING
+											option ЕСТЕСТВЕННЫЕ НАУКИ/NATURAL SCIENCES
+											option STATISTICA/ STATISTICS
+											option МЕДИЦИНА И ХИРУРГИЯ/ MEDICINE AND SURGERY
+											option ФАРМАЦЕВТИКА/ PHARMACY
+											option ВЕТЕРИНАРИЯ/ VETERINARY MEDICINE
+											option ПСИХОЛОГИЯ/ PSYCHOLOGY
+											option КОММУНИКАЦИИ, PR, РЕКЛАМА/ COMMUNICATION, PUBLIC RELATION AND ADVERTISING
+											option ТУРИЗМ/ TOURISM
+											option ГУМАНИТАРНЫЕ НАУКИ/ HUMANITIES
+											option ПЕДАГОГИКА И ПРОФЕССИОНАЛЬНАЯ ПОДГОТОВКА/ EDUCATION AND TRAINING SCIENCES
+											option ЛИНГВИСТИКА/ LANGUAGE STUDIES
+											option ДИЗАЙН/МОДА/ DESIGN & FASHION
+											option КУЛИНАРИЯ И КОНДИТЕРСКОЕ ДЕЛО/ CULINARY AND PASTRY
+											option СЕЛЬСКОЕ ХОЗЯЙСТВО, ЛЕСНОЕ ХОЗЯЙСТВО И ПИЩЕВЫЕ НАУКИ/ AGRICULTURAL, FORESTRY AND FOOD SCIENCES
+											option МУЗЫКА/ MUSIC
+
+							.w-100
+							.col-lg-6
+								+input("",'password','Пароль')
+							.col-lg-6
+								+input("",'password','Повторите пароль')
+							.w-100
+							.col-lg-6.mb-4
+								+e.btn.w-100.ttu(type="submit")= b
+							.col-12
+								+in-c()
+									+e.SPAN.text Я согласен #[a(href="#") на обработку моих персональных данных] 
+				.col-lg-auto
+					+e.aside 
+						.h6.strong.mb-4 Пояснение к регистрации
+						+e.aside-text.text-secondary Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации
+mixin login(b="Зарегистрироваться")
+	+b.form-wrap(class="form-wrap--border")
+		.container
+			.row
+				.col
+					form(action='/file-upload'  enctype="multipart/form-data")
+						//- .dropzone(action='/file-upload'  enctype="multipart/form-data")
+						.row
+							.col-lg-6
+								+input("",'email','Электронный адрес / E-mail')
+							 
+							.col-lg-6
+								+input("",'password','Пароль / Password') 
+							.col-lg-6.mb-4
+								+e.btn.w-100.ttu(type="submit") Войти
+							.col-lg-6.mb-4.align-self-center
+								a.btn.btn-link(href="#") Восстановить пароль
+
+						 
+				.col-lg-auto
+					+e.aside 
+						//- .h6.strong.mb-4 Пояснение к регистрации
+						//- +e.aside-text.text-secondary Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации
+mixin password(b="Зарегистрироваться")
+	+b.form-wrap(class="form-wrap--border")
+		.container
+			.row
+				.col
+					form(action='/file-upload'  enctype="multipart/form-data")
+						//- .dropzone(action='/file-upload'  enctype="multipart/form-data")
+						.row
+							.col-lg-6
+								+input("",'email','Электронный адрес / E-mail')
+							.w-100
+							.col-lg-6.mb-4
+								+e.btn.w-100.ttu(type="submit") Восстановить
+
+						 
+				.col-lg-auto
+					+e.aside 
+						//- .h6.strong.mb-4 Пояснение к регистрации
+						//- +e.aside-text.text-secondary Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации

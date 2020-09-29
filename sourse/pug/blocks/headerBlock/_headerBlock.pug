@@ -1,0 +1,32 @@
+mixin headerBlock()
+	// start headerBlock
+	+b.headerBlock.bg-wrap#headerBlock&attributes(attributes) 
+		.container
+			+e.row.row
+				+e.col.col-auto
+					img.res-i(src="img/svg/logo-head.svg" loading="lazy", alt="")
+			 
+				+e.col.col-auto.mr-auto.text-center
+					+e.date 22-23 
+					+e.m ОКТЯБРЯ
+					+e.year 2020 
+				.col-auto.text-center
+					+e.smallest Генеральный партнер
+					img.res-i(src="img/svg/logo-top-1.svg" loading="lazy", alt="")
+				.col-auto.text-center
+					+e.smallest Организатор
+					img.res-i(src="img/svg/logo-top-2.svg" loading="lazy", alt="")
+			+e.wrap
+				+e.video.bg-wrap(href="https://www.youtube.com/watch?v=mbcP3Oc0PjU&list=PLqKQF2ojwm3l4oPjsB9chrJmlhZ-zOzWT&index=13" data-fancybox="videoGal")
+					+pic("video.jpg",'bg')(class="picture-bg") 
+				+e.text-block
+					.row
+						.col
+							.h5 Название Трека в одну строку
+							p Билет дает вам доступ к выступлениям по более чем 100 темам...
+							+e.date-sm 18.08.2020 14:30
+						.col-auto
+							+e.btn-wrap
+								+e.btn(href="#")
+									img(src="img/svg/logo-2.svg", alt="")
+	// end headerBlock

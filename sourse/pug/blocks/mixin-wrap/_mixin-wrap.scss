@@ -1,0 +1,45 @@
+ 
+	  
+.soc{
+	margin: rem(15) rem(-12px);
+	display: flex;
+	justify-content: center;
+	&__item{
+		text-decoration: none !important;
+		margin: 0 rem(12px);
+		vertical-align: middle;
+
+		width: rem(40);
+		height: rem(40);
+		border: 1px solid rgba($color: #161C28, $alpha: .42);
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@include mt; 
+		color: #161c28 !important;
+		&:hover{
+		 	// box-shadow: 0 0 33px 0px rgba(255, 83, 0, 0.16);
+			opacity: .6 ;
+		}
+		
+	}
+	.icon{
+	font-size: rem(22);
+	}
+	 
+
+}
+ 
+
+.counter{
+	counter-reset: num;
+	&__item {
+		position: relative; 
+		&::before {
+			content: counter(num);
+			counter-increment: num;
+		}
+	}
+}
+
