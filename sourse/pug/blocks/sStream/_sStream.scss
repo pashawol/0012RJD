@@ -201,6 +201,7 @@
 			}
 			.icon{
 				font-size: rem(24);
+				
 			}
 		}
 
@@ -391,6 +392,7 @@
 	padding: 0;
 	.icon{
 		font-size: rem(24);
+		color: #8f9bb3;
 		&-feather_send{
 			fill: transparent;
 			stroke: currentColor;
@@ -404,4 +406,9 @@
 	margin-right: auto;
 	box-shadow: 0px 53.6471px 67px -11.6235px rgba(0, 0, 0, 0.21);
 	background: #161C28;
+}
+.public-chat-form-input{
+	background: #161C28;
+	color: #ffffff;
+
 }

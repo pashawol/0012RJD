@@ -357,7 +357,8 @@
 
 		.chat-message-file-wrapper {
 			border-radius: 0;
-			background: #1A98D5;
+		background: #8F9BB3;
+		cursor: pointer;
 
 			@include media-breakpoint-up(sm) {
 
