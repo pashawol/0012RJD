@@ -1,0 +1,62 @@
+mixin sNews()
+	// start sNews
+	+b.sNews.section#sNews&attributes(attributes)
+		.container
+			+e.grid.row
+				mixin item(i,l='20.10.2020',n='Заголовок новости в одну  или несколько строк')
+					+e.col.col-12
+						+e.item
+							+e.img-wrap.bg-wrap(href="#")
+								+pic(`sNews-${i}`,'bg',0)(class="picture-bg")
+							+e.caption
+								+e.DIV.title
+									a(href="#")!= n
+								+e.DIV.label!= l
+							//- +e.DIV.text!= t
+
+				+item(1, `14.04.2021`)
+				+item(2, `14.04.2021`)
+				+item(3, `14.04.2021`)
+				+item(4, `14.04.2021`)
+				+item(5, `14.04.2021`)
+				+item(6, `14.04.2021`)
+				+item(7, `14.04.2021`)
+				+pugin()
+				+e.col-form.col-12
+					+form-wrap()(class="bg-white")
+						.h4 Связаться с&nbsp;представителем пресс-центра
+						p Напишите нам через форму обратной связи, и&nbsp;мы&nbsp;свяжемся с&nbsp;вами как можно быстрее.
+						+input('Ваше имя')
+						+input('Эл.почта','email')
+						+input('Ваш вопрос','textarea')
+						+e.btn--arrows.btn.btn-primary(type='submit') Задать вопрос
+						+polite
+			
+
+
+
+
+	// end sNews
+mixin sNews2()
+	// start sNews
+	+b.sNews.section.pt-0#sNews&attributes(attributes)
+		.container
+			.pb-5
+				h4 Другие новости
+			+e.grid.row
+				mixin item(i,l='20.10.2020',n='Заголовок новости в одну  или несколько строк')
+					+e.col.col-12
+						+e.item
+							+e.img-wrap.bg-wrap(href="#")
+								+pic(`sNews-${i}`,'bg',0)(class="picture-bg")
+							+e.caption
+								+e.DIV.title
+									a(href="#")!= n
+								+e.DIV.label!= l
+							//- +e.DIV.text!= t
+
+				+item(1, `14.04.2021`)
+				+item(2, `14.04.2021`)
+				+item(3, `14.04.2021`)
+			 
+	// end sNews

@@ -1,0 +1,30 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sNewsDetails/_sNewsDetails.pug
+include ../blocks/sNews/_sNews.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'Заголовок новости в одну или несколько строк'
+	title= title
+block pagecontent 
+	+top-nav()
+	+b.page-title
+		.container
+			.row
+				.col-auto
+					+e.link(href="#") 
+						+icon("arrow-back")
+				.col
+					h1= title
+					+e.date 20.10.2020
+	+sNewsDetails()
+	+sNews2()
+	+footer()
+
+
+	

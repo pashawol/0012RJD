@@ -138,8 +138,8 @@ display: inline-block;
 		left: 0;
 		display: block;
 		top: rem(3); 
-		width: rem(20px);
-		height: rem(20px); 
+		width: rem(24px);
+		height: rem(24px); 
 		border: 1px solid #000000;
 		box-sizing: border-box;
 		border-radius: 4px;
@@ -181,7 +181,7 @@ display: inline-block;
 		}
 	}
 	&__text{
-		font-size: rem(12);
+		font-size: rem(11);
 		line-height: (14 / 12);
 	}
 }

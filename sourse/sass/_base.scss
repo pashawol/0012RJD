@@ -489,7 +489,15 @@ iframe {
 	padding-top: rem(25);
 	margin-bottom: rem(15);
 	padding-bottom: rem(40);
-
+	&__date{
+		background-image: url(../img/svg/date-bg.svg);
+		display: inline-block;
+		padding: rem(8) rem(15);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		font-weight: 500;
+		margin-top: .8rem;
+	}
 	.tabs {
 		&__caption {
 			display: flex;
@@ -556,10 +564,10 @@ iframe {
 
 		@include media-breakpoint-up(sm) {
 
-			top: rem(15);
+			// top: rem(15);
 		}
 
-		top: rem(10);
+		top: rem(5);
 
 		.icon {
 			// fill: $primary;

@@ -845,8 +845,8 @@ $pagination-padding-x-sm: .5rem !default;
 $pagination-padding-y-lg: .75rem !default;
 $pagination-padding-x-lg: 1.5rem !default;
 
-$pagination-color: $link-color !default;
-$pagination-bg: $white !default;
+$pagination-color: $white !default;
+$pagination-bg: transparent !default;
 $pagination-border-width: $border-width !default;
 $pagination-border-radius: $border-radius !default;
 $pagination-margin-left: -$pagination-border-width !default;
@@ -859,8 +859,8 @@ $pagination-hover-color: $link-hover-color !default;
 $pagination-hover-bg: $gray-200 !default;
 $pagination-hover-border-color: $gray-300 !default;
 
-$pagination-active-color: $component-active-color !default;
-$pagination-active-bg: $component-active-bg !default;
+$pagination-active-color:  #161C28 !default;
+$pagination-active-bg: $white !default;
 $pagination-active-border-color: $pagination-active-bg !default;
 
 $pagination-disabled-color: $gray-600 !default;
