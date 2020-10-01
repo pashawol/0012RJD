@@ -24,131 +24,133 @@
 		<link rel="stylesheet" href="css/main.min.css"/>
 	</head>
 	<body>
-		<!-- start top-nav-->
-		<div class="top-nav block-with-lazy">
-			<div class="container">
-				<div class="row">
-					<div class="col-auto"><a class="top-nav__logo" href="/"><img src="img/@2x/logo.png" alt=""/></a>
-					</div>
-					<div class="col-lg-auto col"><a class="top-nav__logo" href="#"><img src="img/svg/logo-2.svg" alt=""/></a>
-					</div>
-					<div class="col-auto d-lg-none">
-						<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+		<div class="main-wrapper">
+			<!-- start top-nav-->
+			<div class="top-nav block-with-lazy">
+				<div class="container">
+					<div class="row">
+						<div class="col-auto"><a class="top-nav__logo" href="/"><img src="img/@2x/logo.png" alt=""/></a>
 						</div>
-					</div>
-					<div class="top-nav__col col-lg">
-						<div class="nav-wrap">
-							<div class="row">
-								<div class="col-lg">
-									<ul class="navMenu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Программа</a>
-										</li>
-										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Спикеры</a>
-										</li>
-										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Участники</a>
-										</li>
-										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Выставка</a>
-										</li>
-										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Пресс-центр </a>
-										</li>
-										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Партнеры</a>
-										</li>
-										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Переговорные комнаты</a>
-										</li>
-										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Контакты</a>
-										</li>
-									</ul>
-								</div>
-								<div class="col-auto"><a class="top-nav__btn top-nav__btn--lang btn-outline-primary active" href="#">Ru</a><a class="top-nav__btn top-nav__btn--lang btn-outline-primary" href="#">En</a>
-								</div>
-								<div class="col-auto"><a class="top-nav__btn top-nav__btn--cabinet btn-primary" href="#">Личный кабинет </a>
+						<div class="col-lg-auto col"><a class="top-nav__logo" href="#"><img src="img/svg/logo-2.svg" alt=""/></a>
+						</div>
+						<div class="col-auto d-lg-none">
+							<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+							</div>
+						</div>
+						<div class="top-nav__col col-lg">
+							<div class="nav-wrap">
+								<div class="row">
+									<div class="col-lg">
+										<ul class="navMenu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Программа</a>
+											</li>
+											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Спикеры</a>
+											</li>
+											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Участники</a>
+											</li>
+											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Выставка</a>
+											</li>
+											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Пресс-центр </a>
+											</li>
+											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Партнеры</a>
+											</li>
+											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Переговорные комнаты</a>
+											</li>
+											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Контакты</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-auto"><a class="top-nav__btn top-nav__btn--lang btn-outline-primary active" href="#">Ru</a><a class="top-nav__btn top-nav__btn--lang btn-outline-primary" href="#">En</a>
+									</div>
+									<div class="col-auto"><a class="top-nav__btn top-nav__btn--cabinet btn-primary" href="#">Личный кабинет </a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- end top-nav-->
-		<div class="page-title">
-			<div class="container">
-				<h1>Спикеры</h1>
-				<div class="page-title__search">
-					<div class="page-title__input-wrap form-group"><input class="page-title__input form-control" type="search" placeholder="Найти спикера" name="search"/>
-					</div>
-					<!-- +e.input-wrap-->
-					<button class="page-title__btnSearch" type="submit">
-						<svg class="icon icon-search ">
-							<use xlink:href="img/svg/sprite.svg#search"></use>
-						</svg>
-					</button>
-				</div>
-			</div>
-		</div>
-		<!-- start sNewsDetails-->
-		<div class="sNewsDetails" id="sNewsDetails">
-			<div class="container">
-				<div class="sNewsDetails__wrap">
-					<!-- picture-->
-					<picture> 
-						<noscript class="loading-lazy">
-							<source srcset="img/@2x/webp/rec.webp" loading="lazy" type="image/webp" media="(min-width:576px)"/>
-							<source srcset="img/@1x/webp/rec.webp" loading="lazy" type="image/webp"/>
-							<source srcset="img/@2x/rec.jpg" loading="lazy" type="image/jpg" media="(min-width:576px)"/>
-							<source srcset="img/@1x/rec.jpg" loading="lazy" type="image/jpg"/><img src="img/@2x/rec.jpg" loading="lazy" alt=""/>
-						</noscript>
-					</picture>
-					<!-- /picture-->
-					<div class="sNewsDetails__text-block">
-						<p>От имени ОАО «РЖД» приглашаю вас принять участие в первом международном транспортно-логистическом форуме «PRO//Движение.1520». Обращение генерального директора - председателя правления ОАО «РЖД» Олега Белозёрова Сегодня в мировой экономике наилучшие успехи имеют те бизнесы, которые готовы трансформироваться и постоянно аккумулировать синергетические эффекты от взаимодействия с идеями и технологиями других отраслей. Для российского транспорта ...</p>
-						<ul>
-							<li>От имени ОАО «РЖД» приглашаю вас принять </li>
-							<li>Участие в первом международном транспортно-логистическом</li>
-							<li>Форуме «PRO//Движение.1520».</li>
-							<li>Обращение генерального </li>
-							<li>Директора - председателя правления ОАО «РЖД»</li>
-						</ul>
+			<!-- end top-nav-->
+			<div class="page-title">
+				<div class="container">
+					<h1>Спикеры</h1>
+					<div class="page-title__search">
+						<div class="page-title__input-wrap form-group"><input class="page-title__input form-control" type="search" placeholder="Найти спикера" name="search"/>
+						</div>
+						<!-- +e.input-wrap-->
+						<button class="page-title__btnSearch" type="submit">
+							<svg class="icon icon-search ">
+								<use xlink:href="img/svg/sprite.svg#search"></use>
+							</svg>
+						</button>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- end sNewsDetails-->
-		<!-- start sSpeakers-->
-		<section class="sSpeakers section" id="sSpeakers">
-			<div class="container">
-				<div class="section-title text-center">
-					<h2>sSpeakers</h2>
-				</div>
-				<div class="row"></div>
-			</div>
-		</section>
-		<!-- end sSpeakers-->
-		<footer class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="footer__col col-lg-auto"><img class="res-i" src="img/svg/logo-head-foot.svg" loading="lazy" alt=""/>
-					</div>
-					<div class="footer__col col"><img src="img/svg/footer-logo.svg" loading="lazy" alt=""/>
-					</div>
-					<div class="col-lg-auto">
-						<div class="soc"><a class="soc__item" href="#" target="_blank">
-							<svg class="icon icon-vk ">
-								<use xlink:href="img/svg/sprite.svg#vk"></use>
-							</svg></a><a class="soc__item" href="#" target="_blank">
-							<svg class="icon icon-fb ">
-								<use xlink:href="img/svg/sprite.svg#fb"></use>
-							</svg></a><a class="soc__item" href="#" target="_blank">
-							<svg class="icon icon-instagram ">
-								<use xlink:href="img/svg/sprite.svg#instagram"></use>
-							</svg></a><a class="soc__item" href="#" target="_blank">
-							<svg class="icon icon-youtube ">
-								<use xlink:href="img/svg/sprite.svg#youtube"></use>
-							</svg></a>
+			<!-- start sNewsDetails-->
+			<div class="sNewsDetails" id="sNewsDetails">
+				<div class="container">
+					<div class="sNewsDetails__wrap">
+						<!-- picture-->
+						<picture> 
+							<noscript class="loading-lazy">
+								<source srcset="img/@2x/webp/rec.webp" loading="lazy" type="image/webp" media="(min-width:576px)"/>
+								<source srcset="img/@1x/webp/rec.webp" loading="lazy" type="image/webp"/>
+								<source srcset="img/@2x/rec.jpg" loading="lazy" type="image/jpg" media="(min-width:576px)"/>
+								<source srcset="img/@1x/rec.jpg" loading="lazy" type="image/jpg"/><img src="img/@2x/rec.jpg" loading="lazy" alt=""/>
+							</noscript>
+						</picture>
+						<!-- /picture-->
+						<div class="sNewsDetails__text-block">
+							<p>От имени ОАО «РЖД» приглашаю вас принять участие в первом международном транспортно-логистическом форуме «PRO//Движение.1520». Обращение генерального директора - председателя правления ОАО «РЖД» Олега Белозёрова Сегодня в мировой экономике наилучшие успехи имеют те бизнесы, которые готовы трансформироваться и постоянно аккумулировать синергетические эффекты от взаимодействия с идеями и технологиями других отраслей. Для российского транспорта ...</p>
+							<ul>
+								<li>От имени ОАО «РЖД» приглашаю вас принять </li>
+								<li>Участие в первом международном транспортно-логистическом</li>
+								<li>Форуме «PRO//Движение.1520».</li>
+								<li>Обращение генерального </li>
+								<li>Директора - председателя правления ОАО «РЖД»</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-		</footer>
+			<!-- end sNewsDetails-->
+			<!-- start sSpeakers-->
+			<section class="sSpeakers section" id="sSpeakers">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>sSpeakers</h2>
+					</div>
+					<div class="row"></div>
+				</div>
+			</section>
+			<!-- end sSpeakers-->
+			<footer class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="footer__col col-lg-auto"><img class="res-i" src="img/svg/logo-head-foot.svg" loading="lazy" alt=""/>
+						</div>
+						<div class="footer__col col"><img src="img/svg/footer-logo.svg" loading="lazy" alt=""/>
+						</div>
+						<div class="col-lg-auto">
+							<div class="soc"><a class="soc__item" href="#" target="_blank">
+								<svg class="icon icon-vk ">
+									<use xlink:href="img/svg/sprite.svg#vk"></use>
+								</svg></a><a class="soc__item" href="#" target="_blank">
+								<svg class="icon icon-fb ">
+									<use xlink:href="img/svg/sprite.svg#fb"></use>
+								</svg></a><a class="soc__item" href="#" target="_blank">
+								<svg class="icon icon-instagram ">
+									<use xlink:href="img/svg/sprite.svg#instagram"></use>
+								</svg></a><a class="soc__item" href="#" target="_blank">
+								<svg class="icon icon-youtube ">
+									<use xlink:href="img/svg/sprite.svg#youtube"></use>
+								</svg></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
 		<!--  start modals-->
 		<div class="modal-win" id="modal-ask-question" style="display: none">
 			<div class="form-wrap">

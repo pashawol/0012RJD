@@ -29,28 +29,7 @@
 			grid-row: 2/4;
 		}
 	}
-	.form-wrap{
-		padding: rem(24) rem(20);
-		margin-bottom: rem(46);
-		color: #161C28;
-		&__btn--arrows{
-			text-transform: none;
-			padding: rem(7) rem(10);
-			padding-right: rem(28);
-			position: relative;
-			font-size: 1rem;
-			margin-bottom: 1rem;
-			&::after {
-				content: '';
-				@include a-cent(y);
-				height: rem(44);
-				width: rem(25);
-				background-image: url(../img/svg/arrows-white.svg);
-				background-size: 100% 100%;
-				right: rem(5);
-			}
-		}
-	}
+ 
  
 	&__item{
 			@include media-breakpoint-up(md){

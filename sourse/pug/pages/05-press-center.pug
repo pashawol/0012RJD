@@ -9,15 +9,15 @@ include ../blocks/sRews/_sRews.pug
 include ../blocks/sNews/_sNews.pug
 
 block variables
-	- let  mainPage= 'cabinet-page'
+	- let  mainPage= null
 block title
-	- let  title= 'Личный кабинет'
+	- let  title= 'Пресс-центр'
 	title= title
 block pagecontent
 	//- +mob-mnu()
 	+top-nav('l')
 	+page-title(title)
-	
+	+sRews
 	+sNews()
 	+footer()
 
