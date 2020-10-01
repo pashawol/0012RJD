@@ -628,10 +628,15 @@ iframe {
 	// 07-speakers
 	&__search {
 		position: relative;
+		margin-top: rem(16);
 	}
 
 	&__input {
-		background-color: #161C28;
+		background-color: #161C28 !important;
+		border: none;
+		&::placeholder {
+			color: rgba($color: #fff, $alpha: 0.2);
+		}
 	}
 
 	&__btnSearch {
