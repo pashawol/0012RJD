@@ -1,0 +1,29 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sNewsDetails/_sNewsDetails.pug
+include ../blocks/sNews/_sNews.pug
+include ../blocks/sSpeakers/_sSpeakers.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'Спикеры'
+	title= title
+block pagecontent 
+	+top-nav()
+	+b.page-title
+		.container
+			h1= title
+			+e.search
+				+input('Найти спикера','search')
+				+e.btnSearch(type='submit')
+					+icon('search')
+	+sNewsDetails()
+	+sSpeakers()
+	+footer()
+
+
+	

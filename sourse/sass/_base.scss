@@ -624,6 +624,30 @@ iframe {
 		}
 	}
 
+
+	// 07-speakers
+	&__search {
+		position: relative;
+	}
+
+	&__input {
+		background-color: #161C28;
+	}
+
+	&__btnSearch {
+		position: absolute;
+		right: 0;
+		@include a-cent(y);
+		border: none;
+		background-color: transparent;
+
+		.icon {
+			color: #fff;
+			font-size: rem(19);
+		}
+	}
+	// 07-speakers end
+
 }
 
 

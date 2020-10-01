@@ -144,6 +144,16 @@
   // display: inline-block;
 }
 
+// михин многоточия
+@mixin ell($n: 3) {
+  // line-clamp: $n;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $n;
+  position: relative;
+  overflow: hidden;
+}
+
 
 @mixin input-placeholder {
   &.placeholder {
