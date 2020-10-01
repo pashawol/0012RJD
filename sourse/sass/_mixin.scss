@@ -144,6 +144,12 @@
   // display: inline-block;
 }
 
+// михин многоточия
+@mixin ell($n: 3) {
+  -webkit-line-clamp: $n;
+  line-clamp: $n;
+}
+
 
 @mixin input-placeholder {
   &.placeholder {
