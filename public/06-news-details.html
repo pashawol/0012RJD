@@ -24,184 +24,186 @@
 		<link rel="stylesheet" href="css/main.min.css"/>
 	</head>
 	<body>
-		<!-- start top-nav-->
-		<div class="top-nav block-with-lazy">
-			<div class="container">
-				<div class="row">
-					<div class="col-auto"><a class="top-nav__logo" href="/"><img src="img/@2x/logo.png" alt=""/></a>
-					</div>
-					<div class="col-lg-auto col"><a class="top-nav__logo" href="#"><img src="img/svg/logo-2.svg" alt=""/></a>
-					</div>
-					<div class="col-auto d-lg-none">
-						<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+		<div class="main-wrapper">
+			<!-- start top-nav-->
+			<div class="top-nav block-with-lazy">
+				<div class="container">
+					<div class="row">
+						<div class="col-auto"><a class="top-nav__logo" href="/"><img src="img/@2x/logo.png" alt=""/></a>
 						</div>
-					</div>
-					<div class="top-nav__col col-lg">
-						<div class="nav-wrap">
-							<div class="row">
-								<div class="col-lg">
-									<ul class="navMenu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Программа</a>
-										</li>
-										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Спикеры</a>
-										</li>
-										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Участники</a>
-										</li>
-										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Выставка</a>
-										</li>
-										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Пресс-центр </a>
-										</li>
-										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Партнеры</a>
-										</li>
-										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Переговорные комнаты</a>
-										</li>
-										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Контакты</a>
-										</li>
-									</ul>
-								</div>
-								<div class="col-auto"><a class="top-nav__btn top-nav__btn--lang btn-outline-primary active" href="#">Ru</a><a class="top-nav__btn top-nav__btn--lang btn-outline-primary" href="#">En</a>
-								</div>
-								<div class="col-auto"><a class="top-nav__btn top-nav__btn--cabinet btn-primary" href="#">Личный кабинет </a>
+						<div class="col-lg-auto col"><a class="top-nav__logo" href="#"><img src="img/svg/logo-2.svg" alt=""/></a>
+						</div>
+						<div class="col-auto d-lg-none">
+							<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+							</div>
+						</div>
+						<div class="top-nav__col col-lg">
+							<div class="nav-wrap">
+								<div class="row">
+									<div class="col-lg">
+										<ul class="navMenu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Программа</a>
+											</li>
+											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Спикеры</a>
+											</li>
+											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Участники</a>
+											</li>
+											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Выставка</a>
+											</li>
+											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Пресс-центр </a>
+											</li>
+											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Партнеры</a>
+											</li>
+											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Переговорные комнаты</a>
+											</li>
+											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Контакты</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-auto"><a class="top-nav__btn top-nav__btn--lang btn-outline-primary active" href="#">Ru</a><a class="top-nav__btn top-nav__btn--lang btn-outline-primary" href="#">En</a>
+									</div>
+									<div class="col-auto"><a class="top-nav__btn top-nav__btn--cabinet btn-primary" href="#">Личный кабинет </a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- end top-nav-->
-		<div class="page-title">
-			<div class="container">
-				<div class="row">
-					<div class="col-auto"><a class="page-title__link" href="#"> 
-						<svg class="icon icon-arrow-back ">
-							<use xlink:href="img/svg/sprite.svg#arrow-back"></use>
-						</svg></a>
-					</div>
-					<div class="col">
-						<h1>Заголовок новости в одну или несколько строк</h1>
-						<div class="page-title__date">20.10.2020
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- start sNewsDetails-->
-		<div class="sNewsDetails" id="sNewsDetails">
-			<div class="container">
-				<div class="sNewsDetails__wrap">
-					<!-- picture-->
-					<picture> 
-						<noscript class="loading-lazy">
-							<source srcset="img/@2x/webp/rec.webp" loading="lazy" type="image/webp" media="(min-width:576px)"/>
-							<source srcset="img/@1x/webp/rec.webp" loading="lazy" type="image/webp"/>
-							<source srcset="img/@2x/rec.jpg" loading="lazy" type="image/jpg" media="(min-width:576px)"/>
-							<source srcset="img/@1x/rec.jpg" loading="lazy" type="image/jpg"/><img src="img/@2x/rec.jpg" loading="lazy" alt=""/>
-						</noscript>
-					</picture>
-					<!-- /picture-->
-					<div class="sNewsDetails__text-block">
-						<p>От имени ОАО «РЖД» приглашаю вас принять участие в первом международном транспортно-логистическом форуме «PRO//Движение.1520». Обращение генерального директора - председателя правления ОАО «РЖД» Олега Белозёрова Сегодня в мировой экономике наилучшие успехи имеют те бизнесы, которые готовы трансформироваться и постоянно аккумулировать синергетические эффекты от взаимодействия с идеями и технологиями других отраслей. Для российского транспорта ...</p>
-						<ul>
-							<li>От имени ОАО «РЖД» приглашаю вас принять </li>
-							<li>Участие в первом международном транспортно-логистическом</li>
-							<li>Форуме «PRO//Движение.1520».</li>
-							<li>Обращение генерального </li>
-							<li>Директора - председателя правления ОАО «РЖД»</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- end sNewsDetails-->
-		<!-- start sNews-->
-		<div class="sNews section pt-0" id="sNews">
-			<div class="container">
-				<div class="pb-5">
-					<h4>Другие новости</h4>
-				</div>
-				<div class="sNews__grid row">
-					<div class="sNews__col col-12">
-						<div class="sNews__item"><a class="sNews__img-wrap bg-wrap" href="#">
-							<!-- picture-->
-							<picture class="picture-bg"> 
-								<noscript class="loading-lazy">
-									<source srcset="img/@2x/webp/sNews-1.webp" loading="lazy" type="image/webp"/><img class="object-fit-js" src="img/@2x/sNews-1.jpg" loading="lazy" alt=""/>
-								</noscript>
-							</picture>
-							<!-- /picture--></a>
-							<div class="sNews__caption">
-								<div class="sNews__title"><a href="#">Заголовок новости в одну  или несколько строк</a>
-								</div>
-								<div class="sNews__label">14.04.2021
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="sNews__col col-12">
-						<div class="sNews__item"><a class="sNews__img-wrap bg-wrap" href="#">
-							<!-- picture-->
-							<picture class="picture-bg"> 
-								<noscript class="loading-lazy">
-									<source srcset="img/@2x/webp/sNews-2.webp" loading="lazy" type="image/webp"/><img class="object-fit-js" src="img/@2x/sNews-2.jpg" loading="lazy" alt=""/>
-								</noscript>
-							</picture>
-							<!-- /picture--></a>
-							<div class="sNews__caption">
-								<div class="sNews__title"><a href="#">Заголовок новости в одну  или несколько строк</a>
-								</div>
-								<div class="sNews__label">14.04.2021
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="sNews__col col-12">
-						<div class="sNews__item"><a class="sNews__img-wrap bg-wrap" href="#">
-							<!-- picture-->
-							<picture class="picture-bg"> 
-								<noscript class="loading-lazy">
-									<source srcset="img/@2x/webp/sNews-3.webp" loading="lazy" type="image/webp"/><img class="object-fit-js" src="img/@2x/sNews-3.jpg" loading="lazy" alt=""/>
-								</noscript>
-							</picture>
-							<!-- /picture--></a>
-							<div class="sNews__caption">
-								<div class="sNews__title"><a href="#">Заголовок новости в одну  или несколько строк</a>
-								</div>
-								<div class="sNews__label">14.04.2021
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- end sNews-->
-		<footer class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="footer__col col-lg-auto"><img class="res-i" src="img/svg/logo-head-foot.svg" loading="lazy" alt=""/>
-					</div>
-					<div class="footer__col col"><img src="img/svg/footer-logo.svg" loading="lazy" alt=""/>
-					</div>
-					<div class="col-lg-auto">
-						<div class="soc"><a class="soc__item" href="#" target="_blank">
-							<svg class="icon icon-vk ">
-								<use xlink:href="img/svg/sprite.svg#vk"></use>
-							</svg></a><a class="soc__item" href="#" target="_blank">
-							<svg class="icon icon-fb ">
-								<use xlink:href="img/svg/sprite.svg#fb"></use>
-							</svg></a><a class="soc__item" href="#" target="_blank">
-							<svg class="icon icon-instagram ">
-								<use xlink:href="img/svg/sprite.svg#instagram"></use>
-							</svg></a><a class="soc__item" href="#" target="_blank">
-							<svg class="icon icon-youtube ">
-								<use xlink:href="img/svg/sprite.svg#youtube"></use>
+			<!-- end top-nav-->
+			<div class="page-title">
+				<div class="container">
+					<div class="row">
+						<div class="col-auto"><a class="page-title__link" href="#"> 
+							<svg class="icon icon-arrow-back ">
+								<use xlink:href="img/svg/sprite.svg#arrow-back"></use>
 							</svg></a>
 						</div>
+						<div class="col">
+							<h1>Заголовок новости в одну или несколько строк</h1>
+							<div class="page-title__date">20.10.2020
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</footer>
+			<!-- start sNewsDetails-->
+			<div class="sNewsDetails" id="sNewsDetails">
+				<div class="container">
+					<div class="sNewsDetails__wrap">
+						<!-- picture-->
+						<picture> 
+							<noscript class="loading-lazy">
+								<source srcset="img/@2x/webp/rec.webp" loading="lazy" type="image/webp" media="(min-width:576px)"/>
+								<source srcset="img/@1x/webp/rec.webp" loading="lazy" type="image/webp"/>
+								<source srcset="img/@2x/rec.jpg" loading="lazy" type="image/jpg" media="(min-width:576px)"/>
+								<source srcset="img/@1x/rec.jpg" loading="lazy" type="image/jpg"/><img src="img/@2x/rec.jpg" loading="lazy" alt=""/>
+							</noscript>
+						</picture>
+						<!-- /picture-->
+						<div class="sNewsDetails__text-block">
+							<p>От имени ОАО «РЖД» приглашаю вас принять участие в первом международном транспортно-логистическом форуме «PRO//Движение.1520». Обращение генерального директора - председателя правления ОАО «РЖД» Олега Белозёрова Сегодня в мировой экономике наилучшие успехи имеют те бизнесы, которые готовы трансформироваться и постоянно аккумулировать синергетические эффекты от взаимодействия с идеями и технологиями других отраслей. Для российского транспорта ...</p>
+							<ul>
+								<li>От имени ОАО «РЖД» приглашаю вас принять </li>
+								<li>Участие в первом международном транспортно-логистическом</li>
+								<li>Форуме «PRO//Движение.1520».</li>
+								<li>Обращение генерального </li>
+								<li>Директора - председателя правления ОАО «РЖД»</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end sNewsDetails-->
+			<!-- start sNews-->
+			<div class="sNews section pt-0" id="sNews">
+				<div class="container">
+					<div class="pb-5">
+						<h4>Другие новости</h4>
+					</div>
+					<div class="sNews__grid row">
+						<div class="sNews__col col-12">
+							<div class="sNews__item"><a class="sNews__img-wrap bg-wrap" href="#">
+								<!-- picture-->
+								<picture class="picture-bg"> 
+									<noscript class="loading-lazy">
+										<source srcset="img/@2x/webp/sNews-1.webp" loading="lazy" type="image/webp"/><img class="object-fit-js" src="img/@2x/sNews-1.jpg" loading="lazy" alt=""/>
+									</noscript>
+								</picture>
+								<!-- /picture--></a>
+								<div class="sNews__caption">
+									<div class="sNews__title"><a href="#">Заголовок новости в одну  или несколько строк</a>
+									</div>
+									<div class="sNews__label">14.04.2021
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sNews__col col-12">
+							<div class="sNews__item"><a class="sNews__img-wrap bg-wrap" href="#">
+								<!-- picture-->
+								<picture class="picture-bg"> 
+									<noscript class="loading-lazy">
+										<source srcset="img/@2x/webp/sNews-2.webp" loading="lazy" type="image/webp"/><img class="object-fit-js" src="img/@2x/sNews-2.jpg" loading="lazy" alt=""/>
+									</noscript>
+								</picture>
+								<!-- /picture--></a>
+								<div class="sNews__caption">
+									<div class="sNews__title"><a href="#">Заголовок новости в одну  или несколько строк</a>
+									</div>
+									<div class="sNews__label">14.04.2021
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sNews__col col-12">
+							<div class="sNews__item"><a class="sNews__img-wrap bg-wrap" href="#">
+								<!-- picture-->
+								<picture class="picture-bg"> 
+									<noscript class="loading-lazy">
+										<source srcset="img/@2x/webp/sNews-3.webp" loading="lazy" type="image/webp"/><img class="object-fit-js" src="img/@2x/sNews-3.jpg" loading="lazy" alt=""/>
+									</noscript>
+								</picture>
+								<!-- /picture--></a>
+								<div class="sNews__caption">
+									<div class="sNews__title"><a href="#">Заголовок новости в одну  или несколько строк</a>
+									</div>
+									<div class="sNews__label">14.04.2021
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end sNews-->
+			<footer class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="footer__col col-lg-auto"><img class="res-i" src="img/svg/logo-head-foot.svg" loading="lazy" alt=""/>
+						</div>
+						<div class="footer__col col"><img src="img/svg/footer-logo.svg" loading="lazy" alt=""/>
+						</div>
+						<div class="col-lg-auto">
+							<div class="soc"><a class="soc__item" href="#" target="_blank">
+								<svg class="icon icon-vk ">
+									<use xlink:href="img/svg/sprite.svg#vk"></use>
+								</svg></a><a class="soc__item" href="#" target="_blank">
+								<svg class="icon icon-fb ">
+									<use xlink:href="img/svg/sprite.svg#fb"></use>
+								</svg></a><a class="soc__item" href="#" target="_blank">
+								<svg class="icon icon-instagram ">
+									<use xlink:href="img/svg/sprite.svg#instagram"></use>
+								</svg></a><a class="soc__item" href="#" target="_blank">
+								<svg class="icon icon-youtube ">
+									<use xlink:href="img/svg/sprite.svg#youtube"></use>
+								</svg></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
 		<!--  start modals-->
 		<div class="modal-win" id="modal-ask-question" style="display: none">
 			<div class="form-wrap">

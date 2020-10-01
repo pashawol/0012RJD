@@ -24,167 +24,169 @@
 		<link rel="stylesheet" href="css/main.min.css"/>
 	</head>
 	<body class="cabinet-page">
-		<!-- start top-nav-->
-		<div class="top-nav block-with-lazy">
-			<div class="container">
-				<div class="row">
-					<div class="col-auto"><a class="top-nav__logo" href="/"><img src="img/@2x/logo.png" alt=""/></a>
-					</div>
-					<div class="col-lg-auto col"><a class="top-nav__logo" href="#"><img src="img/svg/logo-2.svg" alt=""/></a>
-					</div>
-					<div class="col-auto d-lg-none">
-						<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+		<div class="main-wrapper">
+			<!-- start top-nav-->
+			<div class="top-nav block-with-lazy">
+				<div class="container">
+					<div class="row">
+						<div class="col-auto"><a class="top-nav__logo" href="/"><img src="img/@2x/logo.png" alt=""/></a>
+						</div>
+						<div class="col-lg-auto col"><a class="top-nav__logo" href="#"><img src="img/svg/logo-2.svg" alt=""/></a>
+						</div>
+						<div class="col-auto d-lg-none">
+							<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+							</div>
+						</div>
+						<div class="top-nav__col col-lg">
+							<div class="nav-wrap">
+								<div class="row">
+									<div class="col-lg">
+										<ul class="navMenu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Программа</a>
+											</li>
+											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Спикеры</a>
+											</li>
+											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Участники</a>
+											</li>
+											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Выставка</a>
+											</li>
+											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Пресс-центр </a>
+											</li>
+											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Партнеры</a>
+											</li>
+											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Переговорные комнаты</a>
+											</li>
+											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Контакты</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-auto"><a class="top-nav__btn top-nav__btn--lang btn-outline-primary active" href="#">Ru</a><a class="top-nav__btn top-nav__btn--lang btn-outline-primary" href="#">En</a>
+									</div>
+									<div class="col-auto"><a class="top-nav__btn top-nav__btn--cabinet btn-primary" href="#">Личный кабинет </a>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="top-nav__col col-lg">
-						<div class="nav-wrap">
+				</div>
+			</div>
+			<!-- end top-nav-->
+			<div class="container">
+				<div class="page-title">
+					<div class="row"> 
+						<div class="col">
+							<h1>Личный кабинет</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="page-title page-title--lines"> 
+					<ul>
+						<li><a href="#">Профиль</a></li>
+						<li><a class="active" href="#">Мое расписание</a></li>
+						<li><a href="#">Чаты</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- start sEvents-->
+			<div class="sEvents pt-0 section" id="sEvents">
+				<div class="container"><a class="sEvents__btn btn-primary" href="#"> 
+					<svg class="icon icon-icon-print ">
+						<use xlink:href="img/svg/sprite.svg#icon-print"></use>
+					</svg></a>
+						<div class="sEvents__item">
+							<div class="sEvents__star active">
+								<svg class="icon icon-star ">
+									<use xlink:href="img/svg/sprite.svg#star"></use>
+								</svg>
+							</div>
 							<div class="row">
-								<div class="col-lg">
-									<ul class="navMenu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Программа</a>
-										</li>
-										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Спикеры</a>
-										</li>
-										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Участники</a>
-										</li>
-										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Выставка</a>
-										</li>
-										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Пресс-центр </a>
-										</li>
-										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Партнеры</a>
-										</li>
-										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Переговорные комнаты</a>
-										</li>
-										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Контакты</a>
-										</li>
-									</ul>
-								</div>
-								<div class="col-auto"><a class="top-nav__btn top-nav__btn--lang btn-outline-primary active" href="#">Ru</a><a class="top-nav__btn top-nav__btn--lang btn-outline-primary" href="#">En</a>
-								</div>
-								<div class="col-auto"><a class="top-nav__btn top-nav__btn--cabinet btn-primary" href="#">Личный кабинет </a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- end top-nav-->
-		<div class="container">
-			<div class="page-title">
-				<div class="row"> 
-					<div class="col">
-						<h1>Личный кабинет</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="page-title page-title--lines"> 
-				<ul>
-					<li><a href="#">Профиль</a></li>
-					<li><a class="active" href="#">Мое расписание</a></li>
-					<li><a href="#">Чаты</a></li>
-				</ul>
-			</div>
-		</div>
-		<!-- start sEvents-->
-		<div class="sEvents pt-0 section" id="sEvents">
-			<div class="container"><a class="sEvents__btn btn-primary" href="#"> 
-				<svg class="icon icon-icon-print ">
-					<use xlink:href="img/svg/sprite.svg#icon-print"></use>
-				</svg></a>
-					<div class="sEvents__item">
-						<div class="sEvents__star active">
-							<svg class="icon icon-star ">
-								<use xlink:href="img/svg/sprite.svg#star"></use>
-							</svg>
-						</div>
-						<div class="row">
-							<div class="col">
-								<div class="sEvents__head"> 
-									<div class="row"> 
-										<div class="sEvents__time col-auto pb-1">12.55 – 14.10
+								<div class="col">
+									<div class="sEvents__head"> 
+										<div class="row"> 
+											<div class="sEvents__time col-auto pb-1">12.55 – 14.10
+											</div>
+											<div class="pb-1 col-auto">Встреча/переговоры</div>
 										</div>
-										<div class="pb-1 col-auto">Встреча/переговоры</div>
 									</div>
+									<div class="h4 fw-500"><a class="text-white" href="#">Переговорная №1</a></div>
 								</div>
-								<div class="h4 fw-500"><a class="text-white" href="#">Переговорная №1</a></div>
-							</div>
-							<div class="col-xl-3 col-sm-auto"><a href="#"><img src="img/@2x/zoom.png" loading="lazy" alt=""/></a></div>
-						</div>
-					</div>
-					<div class="sEvents__item">
-						<div class="sEvents__star active">
-							<svg class="icon icon-star ">
-								<use xlink:href="img/svg/sprite.svg#star"></use>
-							</svg>
-						</div>
-						<div class="row">
-							<div class="col">
-								<div class="sEvents__head"> 
-									<div class="row"> 
-										<div class="sEvents__time col-auto pb-1">12.55 – 14.10
-										</div> 
-										<div class="pb-1 col-auto text-light">Пленарная дискуссия</div>
-										<div class="pb-1 col-auto">ЗАЛ «ИННОВАЦИИ»</div>
-									</div>
-								</div>
-								<div class="h4 fw-500"><a class="text-white" href="#">In Railway We Trust.</a></div>
-								<div class="h6">Глобальное сотрудничество в условиях неопределенности</div>
+								<div class="col-xl-3 col-sm-auto"><a href="#"><img src="img/@2x/zoom.png" loading="lazy" alt=""/></a></div>
 							</div>
 						</div>
-					</div>
-					<div class="sEvents__item">
-						<div class="sEvents__star active">
-							<svg class="icon icon-star ">
-								<use xlink:href="img/svg/sprite.svg#star"></use>
-							</svg>
-						</div>
-						<div class="row">
-							<div class="col">
-								<div class="sEvents__head"> 
-									<div class="row"> 
-										<div class="sEvents__time col-auto pb-1">12.55 – 14.10
-										</div> 
-										<div class="pb-1 col-auto text-light">Пленарная дискуссия</div>
-										<div class="pb-1 col-auto">ЗАЛ «ИННОВАЦИИ»</div>
+						<div class="sEvents__item">
+							<div class="sEvents__star active">
+								<svg class="icon icon-star ">
+									<use xlink:href="img/svg/sprite.svg#star"></use>
+								</svg>
+							</div>
+							<div class="row">
+								<div class="col">
+									<div class="sEvents__head"> 
+										<div class="row"> 
+											<div class="sEvents__time col-auto pb-1">12.55 – 14.10
+											</div> 
+											<div class="pb-1 col-auto text-light">Пленарная дискуссия</div>
+											<div class="pb-1 col-auto">ЗАЛ «ИННОВАЦИИ»</div>
+										</div>
 									</div>
+									<div class="h4 fw-500"><a class="text-white" href="#">In Railway We Trust.</a></div>
+									<div class="h6">Глобальное сотрудничество в условиях неопределенности</div>
 								</div>
-								<div class="h4 fw-500"><a class="text-white" href="#">Finance as a Masterpiece.</a></div>
-								<div class="h6">Как привлечь инвестиции в условиях кризиса?</div>
 							</div>
 						</div>
-					</div>
+						<div class="sEvents__item">
+							<div class="sEvents__star active">
+								<svg class="icon icon-star ">
+									<use xlink:href="img/svg/sprite.svg#star"></use>
+								</svg>
+							</div>
+							<div class="row">
+								<div class="col">
+									<div class="sEvents__head"> 
+										<div class="row"> 
+											<div class="sEvents__time col-auto pb-1">12.55 – 14.10
+											</div> 
+											<div class="pb-1 col-auto text-light">Пленарная дискуссия</div>
+											<div class="pb-1 col-auto">ЗАЛ «ИННОВАЦИИ»</div>
+										</div>
+									</div>
+									<div class="h4 fw-500"><a class="text-white" href="#">Finance as a Masterpiece.</a></div>
+									<div class="h6">Как привлечь инвестиции в условиях кризиса?</div>
+								</div>
+							</div>
+						</div>
+				</div>
 			</div>
-		</div>
-		<!-- end sEvents-->
-		<footer class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="footer__col col-lg-auto"><img class="res-i" src="img/svg/logo-head-foot.svg" loading="lazy" alt=""/>
-					</div>
-					<div class="footer__col col"><img src="img/svg/footer-logo.svg" loading="lazy" alt=""/>
-					</div>
-					<div class="col-lg-auto">
-						<div class="soc"><a class="soc__item" href="#" target="_blank">
-							<svg class="icon icon-vk ">
-								<use xlink:href="img/svg/sprite.svg#vk"></use>
-							</svg></a><a class="soc__item" href="#" target="_blank">
-							<svg class="icon icon-fb ">
-								<use xlink:href="img/svg/sprite.svg#fb"></use>
-							</svg></a><a class="soc__item" href="#" target="_blank">
-							<svg class="icon icon-instagram ">
-								<use xlink:href="img/svg/sprite.svg#instagram"></use>
-							</svg></a><a class="soc__item" href="#" target="_blank">
-							<svg class="icon icon-youtube ">
-								<use xlink:href="img/svg/sprite.svg#youtube"></use>
-							</svg></a>
+			<!-- end sEvents-->
+			<footer class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="footer__col col-lg-auto"><img class="res-i" src="img/svg/logo-head-foot.svg" loading="lazy" alt=""/>
+						</div>
+						<div class="footer__col col"><img src="img/svg/footer-logo.svg" loading="lazy" alt=""/>
+						</div>
+						<div class="col-lg-auto">
+							<div class="soc"><a class="soc__item" href="#" target="_blank">
+								<svg class="icon icon-vk ">
+									<use xlink:href="img/svg/sprite.svg#vk"></use>
+								</svg></a><a class="soc__item" href="#" target="_blank">
+								<svg class="icon icon-fb ">
+									<use xlink:href="img/svg/sprite.svg#fb"></use>
+								</svg></a><a class="soc__item" href="#" target="_blank">
+								<svg class="icon icon-instagram ">
+									<use xlink:href="img/svg/sprite.svg#instagram"></use>
+								</svg></a><a class="soc__item" href="#" target="_blank">
+								<svg class="icon icon-youtube ">
+									<use xlink:href="img/svg/sprite.svg#youtube"></use>
+								</svg></a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</footer>
+			</footer>
+		</div>
 		<!--  start modals-->
 		<div class="modal-win" id="modal-ask-question" style="display: none">
 			<div class="form-wrap">
