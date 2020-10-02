@@ -209,3 +209,42 @@ a {
 @include media-breakpoint-down(sm) {}
 
 @include media-breakpoint-down(xs) {}
+
+.modal-welocome{
+	max-width: rem(955);
+	padding: 0;
+	&__head{
+		// padding: 0 rem(20);
+		padding-right: rem(20);
+		background-color: $dark;
+		padding-bottom: 0;
+			@include media-breakpoint-up(sm) {
+				padding-left: 0;
+				padding-top: 0;
+			}
+			padding-top: rem(20);
+			padding-left: rem(20);
+		.row{
+			align-items: center;
+		}
+	}
+	&__body{
+		padding: rem(20);
+
+		color: $dark;
+	}
+	p{
+		font-size: rem(20);
+	}
+	.h6{
+		line-height: 1.5;
+		max-width: rem(570);
+		font-weight: normal;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	
+	}
+	img{
+		max-width: rem(191);
+	}
+}

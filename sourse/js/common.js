@@ -168,7 +168,7 @@ function eventHandler() {
 	// добавляет подложку для pixel perfect
 	var x = window.location.host;
 	let screenName;
-	screenName = '10.jpg';
+	screenName = 'main.jpg';
 	if (screenName && x === "localhost:3000") {
 		$(".footer").after(`<div class="pixel-perfect" style="background-image: url(screen/${screenName});"></div>`);
 	}
@@ -217,25 +217,51 @@ function eventHandler() {
 		// 	// }
 		// },
 	}
+	const swiper6 = new Swiper('.sWelcome__slider--js', {
+		// slidesPerView: 5,
 
-	const swiperRew = new Swiper('.sRews__slider--js', {
+		navigation: {
+			nextEl: '.sWelcome .swiper-button-next',
+			prevEl: '.sWelcome .swiper-button-prev',
+		},
+		pagination: {
+			el: '.sWelcome .swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+		}, 
+		lazy: {
+			loadPrevNext: true,
+		},
+	});
+	const swipersSpeakers = new Swiper('.sSpeakers__slider--js', {
 		// slidesPerView: 5,
 		...defaultSl,
 		slidesPerView: 1,
 		spaceBetween: 20,
 		loop: false,
-		 
+		navigation: {
+			nextEl: '.sSpeakers .swiper-button-next',
+			prevEl: '.sSpeakers .swiper-button-prev',
+		},
 		pagination: {
-			el: '.sRews .swiper-pagination',
+			el: '.sSpeakers .swiper-pagination',
 			type: 'bullets',
 			clickable: true, 
 		},
 		breakpoints: {
 			 
-			768: {
-				spaceBetween: 40,
+			576: {
+				spaceBetween: 39,
 				slidesPerView: 2
-			}
+			},
+			992: {
+				spaceBetween: 39,
+				slidesPerView: 3
+			},
+			1200: { 
+				spaceBetween: 39,
+				slidesPerView: 4
+			},
 		}
 	});
 	const swiper4 = new Swiper('.sBanners__slider--js', {
@@ -270,6 +296,8 @@ function eventHandler() {
 		},
 
 	});
+
+
 	// modal window
 
 	$(document).on('click', '.sSpeakersCard__btn, .sPartners__item', function(){

@@ -172,7 +172,7 @@ function eventHandler() {
 
 	var x = window.location.host;
 	var screenName;
-	screenName = '10.jpg';
+	screenName = 'main.jpg';
 
 	if (screenName && x === "localhost:3000") {
 		$(".footer").after("<div class=\"pixel-perfect\" style=\"background-image: url(screen/".concat(screenName, ");\"></div>"));
@@ -203,19 +203,46 @@ function eventHandler() {
 		},
 		watchOverflow: true
 	}, _defineProperty(_defaultSl, "spaceBetween", 0), _defineProperty(_defaultSl, "loop", true), _defaultSl);
-	var swiperRew = new Swiper('.sRews__slider--js', _objectSpread(_objectSpread({}, defaultSl), {}, {
+	var swiper6 = new Swiper('.sWelcome__slider--js', {
+		// slidesPerView: 5,
+		navigation: {
+			nextEl: '.sWelcome .swiper-button-next',
+			prevEl: '.sWelcome .swiper-button-prev'
+		},
+		pagination: {
+			el: '.sWelcome .swiper-pagination',
+			type: 'bullets',
+			clickable: true
+		},
+		lazy: {
+			loadPrevNext: true
+		}
+	});
+	var swipersSpeakers = new Swiper('.sSpeakers__slider--js', _objectSpread(_objectSpread({}, defaultSl), {}, {
 		slidesPerView: 1,
 		spaceBetween: 20,
 		loop: false,
+		navigation: {
+			nextEl: '.sSpeakers .swiper-button-next',
+			prevEl: '.sSpeakers .swiper-button-prev'
+		},
 		pagination: {
-			el: '.sRews .swiper-pagination',
+			el: '.sSpeakers .swiper-pagination',
 			type: 'bullets',
 			clickable: true
 		},
 		breakpoints: {
-			768: {
-				spaceBetween: 40,
+			576: {
+				spaceBetween: 39,
 				slidesPerView: 2
+			},
+			992: {
+				spaceBetween: 39,
+				slidesPerView: 3
+			},
+			1200: {
+				spaceBetween: 39,
+				slidesPerView: 4
 			}
 		}
 	}));

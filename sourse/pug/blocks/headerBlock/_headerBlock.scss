@@ -1,18 +1,20 @@
 // start .headerBlock
 .headerBlock {
+	padding-top: rem(30);
   &__wrap{
 
 		margin-left: auto;
 		margin-right: auto;
 		max-width: rem(754);
+		padding-bottom: rem(65);
 	}
 	&__video{
 		z-index: 4;
 			@include media-breakpoint-up(sm){
 
-				margin-top: rem(40);
-				margin-bottom: rem(45);
+				// margin-bottom: rem(45);
 			}
+			margin-top: rem(35);
 			margin-bottom: rem(25);
 		@include block(754, 424);
 		background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); 
@@ -23,7 +25,36 @@
 	&__date-sm{
 		opacity: 0.5;
 	}
-  
+  &__banner{ 
+		display: inline-block;
+	}
+
+
+	&__date{
+		font-size: rem(24);
+		line-height: 1;
+		
+	}
+	&__m{
+		font-size: rem(13);
+		font-weight: 300;
+	}
+	&__year{
+		font-weight: bold;
+		font-size: rem(24);
+		line-height: 1.1;
+	}
+	&__row{
+		align-items: center;
+	}
+	&__smallest{
+		font-size: rem(11);
+		margin-bottom: rem(20);
+		@include media-breakpoint-up(lg) {
+			padding-top: 0;
+		}
+		padding-top: 1rem;
+	}
 	@include media-breakpoint-up(xl) {}
 	
 	@include media-breakpoint-up(lg) {}
@@ -52,7 +83,11 @@
 	//
 	@include media-breakpoint-down(xl) {}
 
-	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(lg) {
+		.row{
+			justify-content: center;
+		}
+	}
 
 	@include media-breakpoint-down(md) {}
 

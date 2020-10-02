@@ -9,6 +9,9 @@ include ../blocks/sAwaits/_sAwaits.pug
 include ../blocks/sDates/_sDates.pug
 include ../blocks/sExhibition/_sExhibition.pug
 include ../blocks/sPartners/_sPartners.pug
+include ../blocks/sWelcome/_sWelcome.pug
+include ../blocks/sEvents/_sEvents.pug
+include ../blocks/sSpeakers/_sSpeakers.pug
 
 
 block variables
@@ -19,12 +22,15 @@ block title
 block pagecontent
 	+top-nav()
 	+headerBlock()
+	+sWelcome
+	+sEvents0
 	//- +sAwaits
 	//- +sDates
 	//- +sVideo
 	//- +sExhibition
  
 	//- +sLogos
+	+sSpeakers0()
 	+sPartners()(class="section")
 		.section-title
 			h2 Партнеры

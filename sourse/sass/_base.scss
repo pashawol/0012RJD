@@ -21,7 +21,7 @@ html {
 	// background-position: 168px 85px;
 	// background-repeat: no-repeat;
 	opacity: 0;
-	// opacity: 0.7;
+	// opacity: 0.7;	
 }
 
  
@@ -295,11 +295,9 @@ input::-webkit-inner-spin-button {
 }
 
 .swiper-button-hand {
-	width: var(--swiperArrowSize);
+	width: rem(29);
 	height: var(--swiperArrowSize);
-	border-radius: 50%;
-	background-color: var(--swiperBgDef);
-	border: 2px solid var(--swiperBorderColorDef);
+	border-radius: 50%; 
 	color: var(--swiperColorDef);
 	@include bgs;
 	z-index: 300;
@@ -318,7 +316,10 @@ input::-webkit-inner-spin-button {
 	}
 
 	.icon {
-		font-size: rem(12);
+		font-size: rem(17);
+		fill: none;
+		stroke: currentColor;
+		stroke-width: 1px;
 	}
 
 	&::after {
@@ -854,3 +855,9 @@ iframe {
 	.fw-400{
 		font-weight: 40;
 	}
+
+	 .cotrol-wrap {
+	 	position: relative;
+	 	width: rem(100);
+	 	height: rem(17);
+	 }

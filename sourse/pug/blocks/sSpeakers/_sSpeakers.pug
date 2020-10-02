@@ -13,9 +13,9 @@ mixin sSpeakersCard(i,name,t,btn)
 			if btn
 				+e.btn(href="#") Написать сообщение
 			else
-				+e.btn.link-modal(href="#modal-speaker") Открыть биографию
+				+e.btn.link-modal(href="#modal-content") Открыть биографию
 				+e.forModal
-					.row
+					+b.modal-row.row
 						+e.imgCol.col-md.d-none.d-md-block
 							+e.imgWrap
 								if i
@@ -79,4 +79,28 @@ mixin sSpeakers()
 						+sSpeakersCard('5.png','Алексей Шило','Заместитель генерального директора ОАО «РЖД» ...')
 
 				+pugin()
+	// end sSpeakers
+mixin sSpeakers0()
+	// start sSpeakers
+	+b.sSpeakers--main.mt-0.section#sSpeakers&attributes(attributes)
+		.container
+			.section-title
+				.row
+					.col
+						h2 Спикеры
+					.col-auto
+						.cotrol-wrap
+							+arrow()
+			+e.slider--js.swiper-container
+				.swiper-wrapper
+					- for (var x = 0; x < 2; x++)
+						+e.slide.swiper-slide
+							+sSpeakersCard('1.png','Алексей Гром','Генеральный директор, председатель правления АО «Объединенная транспортно- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+						+e.slide.swiper-slide
+							+sSpeakersCard('2.png','Олег Белозеров',`Генеральный директор&#8209;председатель правления ОАО&nbsp;"РЖД"`)
+						+e.slide.swiper-slide
+							+sSpeakersCard('3.png','Сергей Малозёмов','Автор и ведущий программ, НТВ')
+						+e.slide.swiper-slide
+							+sSpeakersCard('4.png','Люк Надаль','председатель правления, Группа GEFCO')
+			.swiper-pagination
 	// end sSpeakers

@@ -89,3 +89,50 @@ mixin sEvents8()
 					.tabs-inner__btn 24.10.2020
 		
 	// end sEvents
+
+
+mixin sEvents0()
+	// start sEvents
+	+b.sEvents--main.section#sEvents&attributes(attributes)
+		.container
+			.section-title
+				.row
+					.col
+						h2 Программа
+					.col-auto
+						a.btn.btn-primary.btn-arrows(href="#") Скачать программу
+			+e.line
+				.row
+					.col-6
+						+e.date 22 октября
+					.col-6
+						+e.date 23 октября
+				//- +e.btn.btn-primary(href="#") 
+				//- 	+icon('icon-print')
+			.h5.strong.mb-4 Ближайшие сессии
+			mixin item(d,t, p, z)
+				+e.item--main
+					//- +e.star.active
+					//- 	+icon('star')
+					.row
+						.col-12
+							+e.head--main
+								.row 
+									+e.time.col-auto.pb-1!= d 
+									block
+							.h4.fw-500: a.text-white(href="#")!= t
+							if p
+								.h6!= p
+					 
+			
+			+e.row-main.row
+				.col-md-6
+					+item(`12.55 – 14.10`, `Переговорная №1`,'Глобальное сотрудничество в условиях неопределенности','z')
+						.pb-1.col-auto Встреча/переговоры
+						.pb-1.col-xl.text-xl-right ЗАЛ «СТРАТЕГИИ»
+				.col-md-6
+					+item(`12.55 – 14.10`, `In Railway We Trust.`,`Глобальное сотрудничество в условиях неопределенности`) 
+						.pb-1.col-auto.text-light Пленарная дискуссия 
+						.pb-1.col-xl.text-xl-right  ЗАЛ «СТРАТЕГИИ»
+		 
+	// end sEvents

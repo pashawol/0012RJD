@@ -1,0 +1,35 @@
+mixin sWelcome()
+	// start sWelcome
+	+b.sWelcome.section#sWelcome&attributes(attributes)
+		.container 
+			+e.head
+				.row
+					.col-lg-6
+					.col
+						.row
+							.col ПРИВЕТСТВИЕ УЧАСТНИКАМ
+								
+							.col-auto
+								.cotrol-wrap
+									+arrow()
+			+e.slider--js.swiper-container
+				.swiper-wrapper
+					- for (var x = 0; x < 3; x++)
+						+e.slide.swiper-slide
+							.row
+								.col-lg-6.order-first
+									+e.img-wrap
+										img.res-i.swiper-lazy(src="#" data-src="img/@2x/man.png", alt="")
+								+e.col.col-lg-6
+									h6 ОБРАЩЕНИЕ ГЕНЕРАЛЬНОГО ДИРЕКТОРА - ПРЕДСЕДАТЕЛЯ ПРАВЛЕНИЯ ОАО «РЖД»              #[strong ОЛЕГА БЕЛОЗЁРОВА]
+									p: strong Уважаемые коллеги! 
+									+e.cut
+										p.h6 От имени ОАО «РЖД» приглашаю вас принять участие в первом международном транспортно-логистическом форуме «PRO//Движение.1520». Обращение генерального директора - председателя правления ОАО «РЖД» Олега Белозёрова Сегодня в мировой экономике наилучшие успехи имеют те бизнесы, которые готовы трансформироваться и постоянно аккумулировать синергетические эффекты от взаимодействия с идеями и технологиями других отраслей. Для российского транспорта  Для российского транспорта Для российского транспорта Для российского транспорта Для российского транспорта
+								.col-lg-6.order-lg-0.order-first
+									+e.caption
+										.h6.strong Олег Белозёров
+										p Генеральный директор - председатель правления ОАО «РЖД»
+								.col-lg-6
+									a.btn.btn-primary.btn-arrows.link-modal(href="#modal-welcome") Читать полностью
+			.swiper-pagination
+	// end sWelcome
