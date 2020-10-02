@@ -1,0 +1,44 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+//- include ../blocks/sProgram/_sProgram.pug
+//- include ../blocks/sPerson/_sPerson.pug
+//- include ../blocks/sNetworking/_sNetworking.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'Регистрация'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	+header()
+		+top-nav()
+	+b.page-title
+		.container
+			.row
+				.col-auto
+					+e.link(href="#") 
+						+icon("arrow-back")
+				.col
+					h1= title 
+	+b.sLogin.section
+		.container
+			.row
+				.col-xl-5.col-lg-6
+					+form-wrap
+						+input("E-mail",'email','E-mail')
+						button.btn.btn-primary(type="submit") Продолжить
+			 
+	//- +headerBlock()
+	//- +sProgram
+	//- .bg-grad
+	//- 	+sPerson
+	//- 	+sNetworking 
+	+sContact()
+	+footer()
+
+
+	

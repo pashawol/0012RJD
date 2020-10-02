@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<title>Контакты</title>
+		<title>Регистрация</title>
 		<meta name="description" content="о чем страница">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -16,67 +16,75 @@
 	</head>
 	<body>
 		<div class="main-wrapper">
-			<!-- start top-nav-->
-			<div class="top-nav block-with-lazy">
-				<div class="container">
-					<div class="row">
-						<div class="col-auto"><a class="top-nav__logo" href="/"><img src="img/@2x/logo.png" alt=""/></a>
-						</div>
-						<div class="col-lg-auto col"><a class="top-nav__logo" href="#"><img src="img/svg/logo-2.svg" alt=""/></a>
-						</div>
-						<div class="col-auto d-lg-none">
-							<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+			<!-- start header-->
+			<header class="header" id="header">
+				<!-- start top-nav-->
+				<div class="top-nav block-with-lazy">
+					<div class="container">
+						<div class="row">
+							<div class="col-auto"><a class="top-nav__logo" href="/"><img src="img/@2x/logo.png" alt=""/></a>
 							</div>
-						</div>
-						<div class="top-nav__col col-lg">
-							<div class="nav-wrap">
-								<div class="row">
-									<div class="col-lg">
-										<ul class="navMenu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-											<li class="navMenu__item" itemprop="item"><a class="navMenu__link text-primary" href="#" itemprop="url"> Программа </a>
-											</li>
-											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Спикеры</a>
-											</li>
-											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Участники</a>
-											</li>
-											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Выставка</a>
-											</li>
-											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Пресс-центр </a>
-											</li>
-											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Партнеры</a>
-											</li>
-											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Переговорные комнаты</a>
-											</li>
-											<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Контакты</a>
-											</li>
-										</ul>
-									</div>
-									<div class="col-auto"><a class="top-nav__btn top-nav__btn--lang btn-outline-primary active" href="#">Ru</a><a class="top-nav__btn top-nav__btn--lang btn-outline-primary" href="#">En</a>
-									</div>
-									<div class="col-auto"><a class="top-nav__btn top-nav__btn--cabinet btn-primary" href="#">Личный кабинет </a>
+							<div class="col-lg-auto col"><a class="top-nav__logo" href="#"><img src="img/svg/logo-2.svg" alt=""/></a>
+							</div>
+							<div class="col-auto d-lg-none">
+								<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+								</div>
+							</div>
+							<div class="top-nav__col col-lg">
+								<div class="nav-wrap">
+									<div class="row">
+										<div class="col-lg">
+											<ul class="navMenu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+												<li class="navMenu__item" itemprop="item"><a class="navMenu__link text-primary" href="#" itemprop="url"> Программа </a>
+												</li>
+												<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Спикеры</a>
+												</li>
+												<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Участники</a>
+												</li>
+												<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Выставка</a>
+												</li>
+												<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Пресс-центр </a>
+												</li>
+												<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Партнеры</a>
+												</li>
+												<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Переговорные комнаты</a>
+												</li>
+												<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Контакты</a>
+												</li>
+											</ul>
+										</div>
+										<div class="col-auto"><a class="top-nav__btn top-nav__btn--lang btn-outline-primary active" href="#">Ru</a><a class="top-nav__btn top-nav__btn--lang btn-outline-primary" href="#">En</a>
+										</div>
+										<div class="col-auto"><a class="top-nav__btn top-nav__btn--cabinet btn-primary" href="#">Личный кабинет </a>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- end top-nav-->
-			<div class="container">
-				<div class="page-title">
-					<div class="row"> 
+				<!-- end top-nav-->
+			</header>
+			<!-- end header-->
+			<div class="page-title">
+				<div class="container">
+					<div class="row">
+						<div class="col-auto"><a class="page-title__link" href="#"> 
+							<svg class="icon icon-arrow-back ">
+								<use xlink:href="img/svg/sprite.svg#arrow-back"></use>
+							</svg></a>
+						</div>
 						<div class="col">
-							<h1>Контакты</h1>
+							<h1>Регистрация</h1>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- start sNews-->
-			<div class="sNews sNews--contacts section" id="sNews">
+			<div class="sLogin section">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-4">
-							<div class="form-wrap bg-white">
+						<div class="col-xl-5 col-lg-6">
+							<div class="form-wrap">
 								<form>
 									<input type="hidden" name="example-input-field"/>
 									<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
@@ -84,82 +92,28 @@
 									<input class="utm_term" type="hidden" name="utm_term"/>
 									<input class="utm_medium" type="hidden" name="utm_medium"/>
 									<input class="utm_campaign" type="hidden" name="utm_campaign"/>
-									<div class="h4">У вас есть вопрос?</div>
-									<p>Напишите нам через форму обратной связи, и мы свяжемся с вами как можно быстрее.</p>
-									<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="text" placeholder="Ваше имя" name="text"/>
-									</div>
-									<!-- +e.input-wrap-->
-									<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="email" placeholder="Эл.почта" name="email"/>
-									</div>
-									<!-- +e.input-wrap-->
-									<div class="form-wrap__input-wrap form-group"><textarea class="form-wrap__input form-control" placeholder="Ваш вопрос" name="textarea"></textarea>
-									</div>
-									<!-- +e.input-wrap-->
-									<button class="form-wrap__btn form-wrap__btn--arrows btn btn-primary" type="submit">Задать вопрос
-									</button>
-									<div class="form-wrap__polite">
-										<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox" checked="checked"/><span class="custom-input__lab"></span><span class="custom-input__text">Согласен на обработку <a class="tdu" href="#">персональных данных</a></span>
+									<div class="form-wrap__input-wrap form-group">
+										<label><span class="input-title">E-mail</span><input class="form-wrap__input form-control" type="email" placeholder="E-mail" name="email"/>
 										</label>
 									</div>
+									<!-- +e.input-wrap-->
+									<button class="btn btn-primary" type="submit">Продолжить</button>
 								</form>
-							</div>
-						</div>
-						<div class="col">
-										<div class="sNews__contactItem">
-											<div class="sNews__contactTitle">Руководитель проекта
-											</div>
-											<div class="sNews__name">Константин Курочкин
-											</div>
-											<div class="sNews__position">руководитель проектного отдела ИД &quot;Гудок&quot;
-											</div><a class="sNews__tel" href="tel:+74959090818"><span>+7 495 909-08-18</span> доб. 70845</a><a class="sNews__mail" href="mailto:k.kurochkin@gudok.ru">k.kurochkin@gudok.ru</a>
-										</div>
-							<div class="row">
-								<div class="col-sm-6">
-												<div class="sNews__contactItem">
-													<div class="sNews__contactTitle">Техническая поддержка 
-													</div>
-													<div class="sNews__name">Анна Кофман
-													</div>
-													<div class="sNews__position">руководитель проектного отдела ИД &quot;Гудок&quot;
-													</div><a class="sNews__tel" href="tel:+74959090818"><span>+7 (495) 909-08-18</span> доб. 70-786</a><a class="sNews__mail" href="mailto:a.kofman@gudok.ru">a.kofman@gudok.ru</a>
-												</div>
-								</div>
-								<div class="col-sm-6">
-												<div class="sNews__contactItem">
-													<div class="sNews__contactTitle">Контакты для СМИ
-													</div>
-													<div class="sNews__name">Анна Кофман
-													</div>
-													<div class="sNews__position">руководитель проектного отдела ИД &quot;Гудок&quot;
-													</div><a class="sNews__tel" href="tel:+74959090818"><span>+7 (495) 909-08-18</span> доб. 70-786</a><a class="sNews__mail" href="mailto:a.kofman@gudok.ru">a.kofman@gudok.ru</a>
-												</div>
-								</div>
-								<div class="col-sm-6">
-												<div class="sNews__contactItem">
-													<div class="sNews__contactTitle">Связаться с организаторами
-													</div>
-													<div class="sNews__name">Дина Абдулдеянова
-													</div><a class="sNews__tel" href="tel:+74959090818"><span>+7 (495) 909-08-18</span> доб. 70852</a><a class="sNews__mail" href="da@gudok.ru">da@gudok.ru</a><br/>
-													<div class="sNews__name">Ирина Васильева
-													</div><a class="sNews__tel" href="tel:+74959830818"><span>+7 495 983 0818</span> доб. 70744</a><a class="sNews__mail" href="i.vasilieva@gudok.ru">i.vasilieva@gudok.ru</a>
-												</div>
-								</div>
-								<div class="col-sm-6">
-												<div class="sNews__contactItem">
-													<div class="sNews__contactTitle">Работа с участниками
-													</div>
-													<div class="sNews__name">Елена Шапочанская
-													</div><a class="sNews__tel" href="tel:+74959090818"><span>+7 (495) 909-08-18</span> доб.70674</a><a class="sNews__mail" href="e.shapochanskaya@gudok.ru">e.shapochanskaya@gudok.ru</a><br/>
-													<div class="sNews__name">Станислав Веселицкий
-													</div><a class="sNews__tel" href="tel:+74959090818"><span>+ 7 (495) 909-0818</span> доб. 70812</a><a class="sNews__mail" href="s.veselitskiy@gudok.ru">s.veselitskiy@gudok.ru</a>
-												</div>
-								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- end sNews-->
+			<!-- start sContact-->
+			<section class="sContact section" id="sContact">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>sContact</h2>
+					</div>
+					<div class="row"></div>
+				</div>
+			</section>
+			<!-- end sContact-->
 			<footer class="footer">
 				<div class="container">
 					<div class="row">

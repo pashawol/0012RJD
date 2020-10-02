@@ -812,3 +812,24 @@ iframe {
 		object-fit: cover;
 	}
 
+
+
+	.btn-arrows{
+		@include media-breakpoint-up(xl) {
+
+			padding-right: rem(40);
+		}
+
+		padding-right: rem(30);
+		position: relative;
+
+		&::after {
+			content: '';
+			@include a-cent(y);
+			height: rem(44);
+			width: rem(25);
+			background-image: url(../img/svg/arrows.svg);
+			background-size: 100% 100%;
+			right: rem(8);
+		}
+	}
