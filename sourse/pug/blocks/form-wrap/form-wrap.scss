@@ -9,7 +9,9 @@ display: inline-block;
 }
 .form-wrap{
 	margin-bottom: rem(28);
-
+	.h4{
+		max-width: rem(280);
+	}
 	&.bg-white {
 		padding: rem(24) rem(20);
 		margin-bottom: rem(46);

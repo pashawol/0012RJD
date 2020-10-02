@@ -10,9 +10,9 @@ mixin sSpeakersCard(i,name,t)
 		+e.back
 			+e.title= name
 			+e.text!= t
-			+e.btn.link-modal(href="#modal-speaker") Открыть биографию
+			+e.btn.link-modal(href="#modal-content") Открыть биографию
 			+e.hidden
-				.row
+				+b.modal-row.row
 					+e.imgCol.col-md.d-none.d-md-block
 						+e.imgWrap
 							if i

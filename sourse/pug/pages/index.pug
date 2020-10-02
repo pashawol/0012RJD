@@ -8,6 +8,7 @@ include ../blocks/sVideo/_sVideo.pug
 include ../blocks/sAwaits/_sAwaits.pug
 include ../blocks/sDates/_sDates.pug
 include ../blocks/sExhibition/_sExhibition.pug
+include ../blocks/sPartners/_sPartners.pug
 
 
 block variables
@@ -24,6 +25,9 @@ block pagecontent
 	//- +sExhibition
  
 	//- +sLogos
+	+sPartners()(class="section")
+		.section-title
+			h2 Партнеры
 	+footer()
 
 

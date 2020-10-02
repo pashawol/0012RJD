@@ -62,8 +62,8 @@ $output-bourbon-deprecation-warnings: false;
 			height: rem(52);
 			
 		}
-		min-width: rem(42);
-		height: rem(42);
+		min-width: rem(35);
+		height: rem(35);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -72,8 +72,13 @@ $output-bourbon-deprecation-warnings: false;
 
 .pagination-wrapper li {
 	@extend .page-item;
-	margin-left: rem(10);
-	margin-right: rem(10);
+	@include media-breakpoint-up(sm){
+		margin-left: rem(10);
+		margin-right: rem(10);
+		
+	}
+	margin-left: rem(5);
+	margin-right: rem(5);
 	font-weight: 500;
 	.icon{
 		fill: transparent;

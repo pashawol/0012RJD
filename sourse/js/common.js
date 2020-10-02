@@ -272,8 +272,8 @@ function eventHandler() {
 	});
 	// modal window
 
-	$('.sSpeakersCard__btn').click(function(){
-		$('#modal-speaker').html($(this).next().html());
+	$(document).on('click', '.sSpeakersCard__btn, .sPartners__item', function(){
+		$('#modal-content .modal-inner').html($(this).next().html());
 	});
 
 	

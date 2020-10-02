@@ -364,8 +364,8 @@
 	display: flex;
 	padding-top: 0.5rem;
 	margin-left: rem(-7);
+	border-top: 1px solid rgba($color: #8F9BB3, $alpha: .1);
 	// margin-right: rem(-7);
-	// border-top: 1px solid rgba($color: #515152, $alpha: .1);
 	> * {
 		margin-left: rem(7);
 		margin-right: rem(7);
