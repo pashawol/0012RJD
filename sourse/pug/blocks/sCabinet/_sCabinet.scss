@@ -294,6 +294,20 @@
 		.chat-message-description {
 			font-size: rem(14);
 			opacity: 0.7;
+			&--sentTo{
+				display: flex;
+				&::before{
+					content: url(../img/svg/check-chat.svg);
+					margin-right: rem(2);
+				}
+			}
+			&--read{
+				&::after{
+					content: url(../img/svg/check-chat.svg);
+					order: -1;
+					margin-right: rem(-9);
+				}
+			}
 		}
 
 		.chat-message-text-wrapper {}

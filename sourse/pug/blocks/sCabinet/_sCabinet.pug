@@ -119,13 +119,13 @@ mixin sCabinet4()
 														.chat-message-text
 															| MTS StartUp Hub – это платформа открытых инноваций включающая в себя акселератор
 													.chat-message-description
-														| 12:41 22.05.2020
+														| Вячеслав, 13:06 12.04.2020
 												+b.chat-message--right
 													.chat-message-text-wrapper.chat-message-text-wrapper--right
 														.chat-message-text
 															| MTS StartUp Hub – это платформа открытых инноваций включающая в себя акселератор
-													.chat-message-description
-														| 12:41 22.05.2020
+													.chat-message-description.chat-message-description--sentTo.chat-message-description--read 
+														| Вы 13:06 12.04.2020
 											.chat-message
 												+b.chat-message-file-wrapper
 													+icon("ion_document")
@@ -133,16 +133,15 @@ mixin sCabinet4()
 														+e.name Filename.pdf
 														+e.size 12 mb 
 												.chat-message-description
-													| 12:41 22.05.2020
+													| Вячеслав, 13:06 12.04.2020
 											+b.chat-message--right
 												+b.chat-message-file-wrapper
 													+icon("ion_document")
 													+e.caption
 														+e.name Filename.pdf
 														+e.size 12 mb
-												.chat-message-description
-													+icon('check-read')
-													| 12:41 22.05.2020
+												.chat-message-description.chat-message-description--sentTo
+													| Вы 13:06 12.04.2020
 										.d-none
 											// блок если не вошел
 											.mt-auto.px-1-5.py-1
@@ -155,8 +154,8 @@ mixin sCabinet4()
 											button.public-chat-form-btn(type='submit')
 												+icon("ion_attach-outline")
 											input.public-chat-form-input(type='text', placeholder='Написать сообщение')
-											button.public-chat-form-btn(type='submit')
-												+icon("uil_smile")
+											//- button.public-chat-form-btn(type='submit')
+											//- 	+icon("uil_smile")
 											button.public-chat-form-btn(type='submit')
 												+icon("feather_send")
 	

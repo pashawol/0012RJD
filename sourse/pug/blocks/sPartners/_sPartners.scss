@@ -1,6 +1,58 @@
 
 	// start .sPartners
 	.sPartners {
+		background-color: #ffffff;
+		.container{
+			position: relative;
+			&::before{
+				content: url(../img/svg/before.svg);
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
+		}
+		&__item{
+			display: block;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			color: #161C28;
+			margin-bottom: rem(50);
+				@include media-breakpoint-up(sm) {
+
+					width: rem(150);
+				}
+			min-height: calc(100% - #{rem(50)});
+		}
+		&__img-wrap{
+			picture{
+
+				height: rem(60);
+				line-height: rem(60);
+				vertical-align: middle;
+				text-align: center;
+			}
+			img{
+				max-height: 100%;
+			}
+		}
+		&__title{
+			flex-grow: 1;
+			text-align: center;
+			opacity: 0.5;
+			font-size: rem(11);
+			margin-bottom: rem(14);
+			margin-left: auto;
+			margin-right: auto;
+			max-width: rem(120);
+		}
+
+		&__wrap{
+			margin-left: auto;
+			margin-right: auto;
+			max-width: rem(800);
+		}
+	 
 		 
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}

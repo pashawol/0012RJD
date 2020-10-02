@@ -40,25 +40,7 @@
 	
 	 
 	
-	.swiper-pagination{
-		position: relative;
-	}
-	.swiper-pagination-bullet{
-		height: rem(2);
-		@include media-breakpoint-up(md) {
 
-			width: rem(134);
-		}
-		width: rem(134 / 2);
-		border-radius: 0;
-		position: relative;
-		margin-bottom: rem(20);
-		&::before{
-			content: '';
-			@include a-cent;
-			height: rem(30);
-		}
-	}
 	&__small{
 		font-size: rem(13);
 	}
