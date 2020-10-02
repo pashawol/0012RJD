@@ -164,7 +164,7 @@
 		display: block;
 		font-size: $small;
 		line-height: calc(30/14);
-		color: #fff;
+		color: #fff !important;
 		&:hover {
 			opacity: .6;
 		}

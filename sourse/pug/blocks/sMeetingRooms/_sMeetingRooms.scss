@@ -1,0 +1,57 @@
+// start .sMeetingRooms
+.sMeetingRooms {
+	margin-top: rem(-27);
+	padding-bottom: calc(var(--sPB));
+	
+	&__item {
+		background: #161C28;
+		box-shadow: 0px 23px 28px -10px rgba(10, 15, 24, 0.78);
+		border-radius: 4px;
+		display: flex;
+		flex-direction: column;
+		height: calc(100% - 32px);
+		margin-bottom: rem(32px);
+		padding: rem(15px) rem(15) 0;
+		@include media-breakpoint-up(sm) {
+			padding: rem(17px) rem(22) 0;
+		}
+	}
+
+	.row {
+		@include roww(21px)
+	}
+
+	&__col {
+		// max-width: 100%;
+		@include media-breakpoint-up(xl) {
+			max-width: 236px !important;
+		}
+	}
+
+	&__title {
+		text-transform: uppercase;
+		padding-bottom: rem(55);
+	}
+
+	&__numb {
+		margin-top: auto;
+		margin-left: auto;
+		font-size: rem(60);
+		@include media-breakpoint-up(sm) {
+		font-size: rem(88);
+		}
+		color: rgba($color: #fff, $alpha: 0.5);
+		line-height: 1.1;
+	}
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.sMeetingRooms

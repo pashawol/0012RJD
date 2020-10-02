@@ -1,0 +1,24 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sNewsDetails/_sNewsDetails.pug
+include ../blocks/sNews/_sNews.pug
+include ../blocks/sMeetingRooms/_sMeetingRooms.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'Переговорные комнаты'
+	title= title
+block pagecontent 
+	+top-nav()
+	+b.page-title
+		.container
+			h1= title
+	+sMeetingRooms()
+	+footer()
+
+
+	
