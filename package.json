@@ -53,7 +53,7 @@
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
     "animate.css": "^4.1.1",
-    "bootstrap": "^5.0.0-alpha1",
+    "bootstrap": "^5.0.0-alpha2",
     "inputmask": "^5.0.5",
     "ion-rangeslider": "^2.3.1",
     "jquery": "^3.5.1",

@@ -10,6 +10,7 @@
 		<!-- Custom Browsers Color-->
 		<meta name="theme-color" content="#3361d8">
 		<link rel="stylesheet" href="libs/swiper/css/swiper.min.css"/>
+		<link rel="stylesheet" href="js/dropzone.min.css"/>
 		<link rel="stylesheet" href="libs/@fancyapps/fancybox/jquery.fancybox.min.css"/>
 		<link rel="stylesheet" href="css/main.min.css"/>
 	</head>
@@ -216,154 +217,136 @@
 		<!-- #modal-call -->
 		<div class="modal-win modal-win--lg" id="modal-edit" style="display: none">
 			<div class="form-wrap form-wrap form-wrap--border">
-				<div class="container">
-					<div class="h6 mb-4">Пожалуйста, заполните анкету латинскими буквами<br/>Please fill in the application form with Latin letters</div>
+				<form action="/file-upload" enctype="multipart/form-data">
 					<div class="row">
-						<div class="col">
-							<form action="/file-upload" enctype="multipart/form-data">
-								<div class="row">
-									<div class="col-lg-6">
-										<div class="form-wrap__input-wrap form-group">
-											<label><span class="input-title">Фамилия / Surname</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
-											</label>
-										</div>
-										<!-- +e.input-wrap-->
-									</div>
-									<div class="col-lg-6">
-										<div class="form-wrap__input-wrap form-group">
-											<label><span class="input-title">Имя / Name</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
-											</label>
-										</div>
-										<!-- +e.input-wrap-->
-									</div>
-									<div class="col-lg-6">
-										<div class="form-wrap__input-wrap form-group">
-											<label><span class="input-title">Телефон / Phone Number</span><input class="form-wrap__input form-control" type="tel" placeholder="" name="tel"/>
-											</label>
-										</div>
-										<!-- +e.input-wrap-->
-									</div>
-									<div class="col-lg-6">
-										<div class="form-wrap__input-wrap form-group">
-											<label><span class="input-title">Почта/E-mail</span><input class="form-wrap__input form-control" type="email" placeholder="" name="email"/>
-											</label>
-										</div>
-										<!-- +e.input-wrap-->
-									</div>
-									<div class="col-lg-6">
-										<div class="form-wrap__input-wrap form-group">
-											<label><span class="input-title">В каком году планируете поступать? / When do you plan to commence your studies?</span>
-												<select class="form-wrap__input form-control">
-													<option> 2021</option>
-													<option>2022</option>
-													<option>2023 и позднее</option>
-												</select>
-											</label>
-										</div>
-									</div>
-									<div class="col-lg-6">
-										<div class="form-wrap__input-wrap form-group">
-											<label><span class="input-title">Какое у Вас образование?/ What is your Education Level?</span>
-												<select class="form-wrap__input form-control">
-													<option>аттестат 11 классов</option>
-													<option>средне-специальное образование</option>
-													<option>аттестат 11 классов+один курс вуза </option>
-													<option>бакалавриат</option>
-													<option>магистратура</option>
-												</select>
-											</label>
-										</div>
-									</div>
-									<div class="col-lg-6">
-										<div class="form-wrap__input-wrap form-group"><span class="input-title">Каким языком вы владеете? / What language are you proficient in?</span>
-											<div class="row">
-												<div class="col-auto">
-													<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox"/><span class="custom-input__lab"></span><span class="custom-input__text">английский</span>
-													</label>
-												</div>
-												<div class="col-auto">
-													<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox"/><span class="custom-input__lab"></span><span class="custom-input__text">итальянский</span>
-													</label>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-6"> 
-										<div class="form-wrap__input-wrap form-group">
-											<label><span class="input-title">Страна проживания / Country of residence</span>
-												<select class="form-wrap__input form-control">
-													<option>Россия</option>
-													<option>Казахстан</option>
-													<option>Азербайджан</option>
-												</select>
-											</label>
-										</div>
-									</div>
-									<div class="col-lg-12">
-										<div class="form-wrap__input-wrap form-group">
-											<label><span class="input-title">Какое направление вас интересует? / What field of studies are you interested in?</span>
-												<select class="form-wrap__input form-control">
-													<option>ЭКОНОМИКА, ФИНАНСЫ, УПРАВЛЕНИЕ БИЗНЕСОМ/ ECONOMICS, FINANCE, BUSINESS MANAGEMENT</option>
-													<option>ПОЛИТОЛОГИЯ, МЕЖДУНАРОДНЫЕ ОТНОШЕНИЯ/ POLITICAL SCIENCE, INTERNATIONAL RELATIONS</option>
-													<option>ЮРИСПРУДЕНЦИЯ/ LAW AND LEGAL STUDIES</option>
-													<option>ИНФОРМАТИКА И КИБЕРБЕЗОПАСНОСТЬ/ COMPUTER SCIENCES AND CYBERSECURITY</option>
-													<option>АРХИТЕКТУРА И СТРОИТЕЛЬСТВО/ ARCHITECTUR</option>
-													<option>ИНЖЕНЕРНОЕ ДЕЛО/ ENGINEERING</option>
-													<option>ЕСТЕСТВЕННЫЕ НАУКИ/NATURAL SCIENCES</option>
-													<option>STATISTICA/ STATISTICS</option>
-													<option>МЕДИЦИНА И ХИРУРГИЯ/ MEDICINE AND SURGERY</option>
-													<option>ФАРМАЦЕВТИКА/ PHARMACY</option>
-													<option>ВЕТЕРИНАРИЯ/ VETERINARY MEDICINE</option>
-													<option>ПСИХОЛОГИЯ/ PSYCHOLOGY</option>
-													<option>КОММУНИКАЦИИ, PR, РЕКЛАМА/ COMMUNICATION, PUBLIC RELATION AND ADVERTISING</option>
-													<option>ТУРИЗМ/ TOURISM</option>
-													<option>ГУМАНИТАРНЫЕ НАУКИ/ HUMANITIES</option>
-													<option>ПЕДАГОГИКА И ПРОФЕССИОНАЛЬНАЯ ПОДГОТОВКА/ EDUCATION AND TRAINING SCIENCES</option>
-													<option>ЛИНГВИСТИКА/ LANGUAGE STUDIES</option>
-													<option>ДИЗАЙН/МОДА/ DESIGN & FASHION</option>
-													<option>КУЛИНАРИЯ И КОНДИТЕРСКОЕ ДЕЛО/ CULINARY AND PASTRY</option>
-													<option>СЕЛЬСКОЕ ХОЗЯЙСТВО, ЛЕСНОЕ ХОЗЯЙСТВО И ПИЩЕВЫЕ НАУКИ/ AGRICULTURAL, FORESTRY AND FOOD SCIENCES</option>
-													<option>МУЗЫКА/ MUSIC</option>
-												</select>
-											</label>
-										</div>
-									</div>
-									<div class="w-100"></div>
-									<div class="col-lg-6">
-										<div class="form-wrap__input-wrap form-group">
-											<label><span class="input-title">Пароль</span><input class="form-wrap__input form-control" type="password" placeholder="" name="password"/>
-											</label>
-										</div>
-										<!-- +e.input-wrap-->
-									</div>
-									<div class="col-lg-6">
-										<div class="form-wrap__input-wrap form-group">
-											<label><span class="input-title">Повторите пароль</span><input class="form-wrap__input form-control" type="password" placeholder="" name="password"/>
-											</label>
-										</div>
-										<!-- +e.input-wrap-->
-									</div>
-									<div class="w-100"></div>
-									<div class="col-lg-6 mb-4">
-										<button class="form-wrap__btn w-100 ttu" type="submit">Сохранить
-										</button>
-									</div>
-									<div class="col-12">
-										<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox"/><span class="custom-input__lab"></span><span class="custom-input__text">Я согласен <a href="#">на обработку моих персональных данных</a> </span>
-										</label>
-									</div>
-								</div>
-							</form>
+						<div class="col-lg-6">
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Фамилия</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
 						</div>
-						<div class="col-lg-auto">
-							<div class="form-wrap__aside"> 
-								<div class="h6 strong mb-4">Пояснение к регистрации</div>
-								<div class="form-wrap__aside-text text-secondary">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации
-								</div>
+						<div class="col-lg-6">
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Имя</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+						<div class="col-lg-6">
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Отчество</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+						<div class="col-lg-6"></div>
+						<div class="col-lg-6">
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Фамилия на английском</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+						<div class="col-lg-6">
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Имя на английском</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+						<div class="col-lg-6">
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Страна  </span>
+									<select class="form-wrap__input form-control">
+										<option>Россия</option>
+										<option>Казахстан</option>
+										<option>Азербайджан</option>
+									</select>
+								</label>
 							</div>
 						</div>
+						<div class="col-lg-6">
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Город</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+						<div class="col-lg-12">
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Название компании</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+						<div class="col-lg-12">
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Название компании на английском</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+						<div class="col-lg-6">
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Должность</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+						<div class="col-lg-6">
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Должность на английском</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+						<div class="col-lg-6">
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Телефон</span><input class="form-wrap__input form-control" type="tel" placeholder="" name="tel"/>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+						<div class="col-lg-6"></div>
+						<div class="col-lg-6"> 
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Пароль</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+						<div class="col-lg-6"> 
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Повторите пароль</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+						<div class="col-lg-12">
+							<label class="dropzone-wrapper d-block">
+								<div class="dropzone" action="/file-upload">
+									<div id="dropzone">
+										<div class="dropzone__prev-wrap"> <span class="strong">+<br/>добавить<br/>фото</span>
+										</div>
+										<div class="fallback">
+											<input name="file" type="file" multiple=""/>
+										</div>
+									</div>
+								</div>
+							</label>
+						</div>
+						<div class="col-lg-6 my-4">
+							<button class="btn btn-primary w-100" type="submit">Сохранить</button>
+						</div>
+						<div class="col-lg-12">
+							<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox"/><span class="custom-input__lab"></span><span class="custom-input__text">Согласие на получение сообщений от других участников</span>
+							</label><br/>
+							<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox"/><span class="custom-input__lab"></span><span class="custom-input__text">Согласен на обработку <a href="#">персональных данных</a></span>
+							</label>
+						</div>
 					</div>
-				</div>
+				</form>
 			</div>
 		</div>
 		<!-- #modal-call-->
@@ -425,6 +408,7 @@
 		<!-- end modals-->
 		<script src="libs/loading-attribute-polyfill/loading-attribute-polyfill.min.js"></script>
 		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="js/dropzone.min.js"></script>
 		<!-- modal libs-->
 		<script src="libs/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
 		<!-- modal libs-->
