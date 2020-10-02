@@ -1,0 +1,57 @@
+extends layout/main.pug
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sNewsDetails/_sNewsDetails.pug
+include ../blocks/sNews/_sNews.pug
+include ../blocks/sSpeakers/_sSpeakers.pug
+
+
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'In Railway We Trust.'
+	title= title
+block pagecontent 
+	+top-nav()
+	+b.page-title
+		.container
+			.row
+				.col-auto
+					+e.link(href="#") 
+						+icon("arrow-back")
+				.col
+					h1= title
+					+e.subtitle Глобальное сотрудничество в условиях неопределенности
+					+e.date 11.00 – 11.15
+					+e.location ЗАЛ «СТРАТЕГИИ»
+
+	+sNewsDetails(class="sNewsDetails-session")
+		+e.text-block
+			p От имени ОАО «РЖД» приглашаю вас принять участие в первом международном транспортно-логистическом форуме «PRO//Движение.1520». Обращение генерального директора - председателя правления ОАО «РЖД» Олега Белозёрова Сегодня в мировой экономике наилучшие успехи имеют те бизнесы, которые готовы трансформироваться и постоянно аккумулировать синергетические эффекты от взаимодействия с идеями и технологиями других отраслей. Для российского транспорта ...
+
+			ul
+				li От имени ОАО «РЖД» приглашаю вас принять 
+				li Участие в первом международном транспортно-логистическом
+				li Форуме «PRO//Движение.1520».
+
+				li Обращение генерального 
+				li Директора - председателя правления ОАО «РЖД»
+			+e.btn(href="#") Перейти к трансляции
+
+	+sSpeakers(class="sSpeakers-session")
+		.h4 Спикеры
+		.row
+			.col-sm-6.col-lg-3
+				+sSpeakersCard('2.png','Олег Белозеров',`Генеральный директор&#8209;председатель правления ОАО&nbsp;"РЖД"`)
+			.col-sm-6.col-lg-3
+				+sSpeakersCard('7.png','Евгений Дитрих','Министр транспорта Российской Федерации')
+			.col-sm-6.col-lg-3
+				+sSpeakersCard('8.png','Жоэль Жантиль','Старший вице-президент по контейнерной и интермодальной логистике, CMA CGM')
+			.col-sm-6.col-lg-3
+				+sSpeakersCard('5.png','Алексей Шило','Заместитель генерального директора ОАО «РЖД» ...')
+	+footer()
+
+
+	

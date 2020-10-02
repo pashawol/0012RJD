@@ -168,7 +168,7 @@ function eventHandler() {
 	// добавляет подложку для pixel perfect
 	var x = window.location.host;
 	let screenName;
-	screenName = 'modalSpeaker.jpg';
+	screenName = '09.jpg';
 	if (screenName && x === "localhost:3000") {
 		$(".footer").after(`<div class="pixel-perfect" style="background-image: url(screen/${screenName});"></div>`);
 	}
@@ -271,6 +271,10 @@ function eventHandler() {
 
 	});
 	// modal window
+
+	$('.sSpeakersCard__btn').click(function(){
+		$('#modal-speaker').html($(this).next().html());
+	});
 
 	
 };
