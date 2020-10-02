@@ -1,0 +1,22 @@
+mixin sMeetingRooms()
+	// start sMeetingRooms
+	+b.sMeetingRooms#sMeetingRooms&attributes(attributes)
+		.container
+			.row
+				mixin item(n)
+					+e.col.col-6.col-md-auto
+						+e.item
+							+e.title Переговорная комната
+							+e.numb= n
+				+item('#1')
+				+item('#2')
+				+item('#3')
+				+item('#4')
+				+item('#5')
+				+item('#6')
+				+item('#7')
+				+item('#8')
+				+item('#9')
+				+item('#10')
+
+	// end sMeetingRooms
