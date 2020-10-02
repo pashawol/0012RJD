@@ -1,0 +1,51 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sProgram/_sProgram.pug
+include ../blocks/sPerson/_sPerson.pug
+include ../blocks/sNetworking/_sNetworking.pug
+include ../blocks/sLive/_sLive.pug
+include ../blocks/sSpeakers/_sSpeakers.pug 
+include ../blocks/sTrackPlan/_sTrackPlan.pug
+include ../blocks/sStream/_sStream.pug
+include ../blocks/sQuestions/_sQuestions.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'Live'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	+header()
+		+top-nav()
+	+page-title(title) 
+	//- +sLive
+	.container
+		.row
+			.col-lg-8
+				+sStream
+			.col-lg-4
+				+sQuestions
+	 
+	//- +sLive()
+	//- +sSpeakers()
+	//- +sQuestions()
+	+sSpeakers(class="sSpeakers-session pb-0")
+		.h4 Спикеры
+		.row
+			.col-sm-6.col-lg-3
+				+sSpeakersCard('2.png','Олег Белозеров',`Генеральный директор&#8209;председатель правления ОАО&nbsp;"РЖД"`)
+			.col-sm-6.col-lg-3
+				+sSpeakersCard('7.png','Евгений Дитрих','Министр транспорта Российской Федерации')
+			.col-sm-6.col-lg-3
+				+sSpeakersCard('8.png','Жоэль Жантиль','Старший вице-президент по контейнерной и интермодальной логистике, CMA CGM')
+			.col-sm-6.col-lg-3
+				+sSpeakersCard('5.png','Алексей Шило','Заместитель генерального директора ОАО «РЖД» ...')
+	+sTrackPlan()
+	+footer()
+
+
+	

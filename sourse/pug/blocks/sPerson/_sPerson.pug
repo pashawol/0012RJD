@@ -1,0 +1,25 @@
+mixin sPerson()
+	// start sPerson
+	+b.SECTION.sPerson.section#sPerson&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Первые
+				+arrow
+				
+		+e.container.container-fluid
+			+e.slider-wrap
+				+e.slider--js.swiper-container
+					.swiper-wrapper
+						mixin slide(i, t1)
+							+e.slide.swiper-slide
+								+e.item
+									img.swiper-lazy.res-i(src="#" data-src=`img/@2x/team-${i}.png`, alt="") 
+									+e.caption
+										+e.title!= t1
+										+e.text smallagent
+						+slide('1',`Колин<br> Максимилиан`)
+						+slide('2',`Cибирская<br> Ольга`)
+						+slide('3',`Карганова<br> Малика`)
+						+slide('3',`Карганова<br> Малика`)
+						+slide('2',`Cибирская<br> Ольга`)
+	// end sPerson

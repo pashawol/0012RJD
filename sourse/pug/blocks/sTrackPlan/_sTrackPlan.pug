@@ -1,0 +1,25 @@
+mixin sTrackPlan()
+	// start sTrackPlan
+	+b.SECTION.sTrackPlan.section#sTrackPlan&attributes(attributes)
+		.container
+			h4.mb-4 Программа форума
+			.row.row--lg
+				mixin item(d,t,p)
+					+e.col.col-lg-4.col-sm-6
+						+e.item
+							+e.img-wrap(href="#")
+								+pic("video",'bg')
+							+e.DIV.text-block
+								+e.DIV.descr!= p
+								+e.DIV.dt
+									+e.DIV.date.mr-2 14 сентября    
+									+e.time 09:45 – 10:45
+
+				+item(`22 мая`, `18:00`, `Название сессии в несколько строк для наглядности`)
+				+item(`22 мая`, `18:00`, `Название сессии в несколько строк для наглядности`)
+				+item(`22 мая`, `18:00`, `Название сессии в несколько строк для наглядности`)
+			
+
+
+
+	// end sTrackPlan

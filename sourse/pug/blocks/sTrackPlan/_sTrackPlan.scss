@@ -1,0 +1,72 @@
+	// start .sTrackPlan
+.sTrackPlan {
+	 --sPT: #{rem(30)};
+	@include media-breakpoint-up(lg) {
+		padding-bottom: 70px;
+	}
+	padding-bottom: 30px;
+		 
+	.section-title{
+		color: $primary;
+		letter-spacing: 0.04em;
+	}
+	&__row{ 
+	}
+	&__col{
+		
+	}
+
+	&__item{
+		margin-bottom: 30px;
+		
+	}
+
+	&__img-wrap{
+		display: block;
+		margin-bottom: rem(20);
+		img{ 
+			min-height: 201px;
+			object-fit: cover;
+		}
+	}
+
+	&__dt{
+		display: flex;
+		// justify-content: space-between;
+		font-size: $small;
+		line-height: (14 / 14);
+		margin-bottom: 21px;
+	}
+
+	&__descr{
+		font-weight: bold; 
+		line-height: (28 / 20);
+		margin-bottom: 1rem;
+	}
+
+
+
+
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+	
+	
+	//
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {}
+
+} // end.sTrackPlan
