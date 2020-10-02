@@ -17,11 +17,6 @@ block pagecontent
 	+b.page-title
 		.container
 			h1= title
-			+e.search
-				+input('Найти спикера','search')
-				+e.btnSearch(type='submit')
-					+icon('search')
-	+sNewsDetails()
 	+sSpeakers()
 	+footer()
 

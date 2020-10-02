@@ -26,6 +26,75 @@
 		font-size: 40px;
 		font-weight: 100;
 	}
+
+	//modal-speaker start
+	&.modal-speaker {
+		overflow: hidden;
+		@include media-breakpoint-up(md) {
+			padding: 0;
+		}
+		background-color: #fff;
+		max-width: 960px;
+		color: $black;
+		.row {
+			@include roww(40px);
+		}
+
+		p {
+			line-height: calc(26/16);
+			margin-bottom: .7rem;
+		}
+	}
+
+	.sSpeakersCard__imgWrap {
+		background: #43454B;
+		overflow: hidden;
+		display: block;
+		@include block(360,481);
+		img {
+			width: 100%;
+			height: 100%;
+			@include a-cent;
+			object-fit: cover;
+			z-index: 1;
+		}
+		&::after {
+			content: '';
+			width: rem(151);
+			height: rem(89);
+			@include a-cent;
+			background-image: url('../img/svg/cardLogo.svg');
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+
+	.sSpeakersCard__title {
+		@extend .h4;
+		margin-bottom: .1rem;
+	}
+
+	.sSpeakersCard__text {
+		font-size: 12px;
+		color: rgba($color: #161C28, $alpha: 0.5);
+		margin-bottom: rem(24);
+	}
+
+	.sSpeakersCard__textCol {
+		@include media-breakpoint-up(md) {
+			padding-top: rem(34);
+			padding-right: rem(50) !important;
+			padding-bottom: rem(30);
+		}
+	}
+
+	.sSpeakersCard__imgCol {
+		@include media-breakpoint-up(md) {
+			max-width: rem(400);
+		}
+	}
+	//modal-speaker end
 }
 
 a {

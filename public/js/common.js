@@ -172,7 +172,7 @@ function eventHandler() {
 
 	var x = window.location.host;
 	var screenName;
-	screenName = '042.jpg';
+	screenName = '09.jpg';
 
 	if (screenName && x === "localhost:3000") {
 		$(".footer").after("<div class=\"pixel-perfect\" style=\"background-image: url(screen/".concat(screenName, ");\"></div>"));
@@ -244,6 +244,10 @@ function eventHandler() {
 			slideShadows: false
 		}
 	})); // modal window
+
+	$('.sSpeakersCard__btn').click(function () {
+		$('#modal-speaker').html($(this).next().html());
+	});
 }
 
 ;

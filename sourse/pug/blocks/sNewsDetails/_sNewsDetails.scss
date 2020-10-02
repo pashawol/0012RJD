@@ -28,6 +28,24 @@
 			background-color: $primary;
 		}
 	}
+
+	&__btn {
+		@extend .btn;
+		@extend .btn-primary;
+		position: relative;
+		margin-top: rem(20);
+		padding-right: rem(30);
+		&::after{
+			content: '';
+			@include a-cent(y);
+			height: rem(44);
+			width: rem(25);
+			background-image: url(../img/svg/arrows.svg);
+			background-size: 100% 100%;
+			right: rem(5);
+			@include mt;
+		}
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}
@@ -38,4 +56,18 @@
 	@include media-breakpoint-only(xl) {}
 	//
 	@include media-breakpoint-down(xl) {}
+
+	&-session {
+		margin-top: rem(-25);
+		padding-bottom: 5rem;
+		.container {
+			@include media-breakpoint-up(xl) {
+				max-width: 1080px;
+			}
+		}
+
+		p {
+			margin-bottom: 1.7rem;
+		}
+	}
 } // end.sNewsDetails
