@@ -29,16 +29,28 @@ block pagecontent
 			.row
 				.col-xl-5.col-lg-6
 					+form-wrap
-						+input("Введите Ваш e-mail",'email')
-						button.btn.btn-arrows.btn-primary.mb-4(type="submit") Продолжить
-						p После отправки проверьте Вашу почту туда мы&nbsp;отправим письмо с&nbsp;дальнейшими инструкциями для регистрации в&nbsp;сервисе
+						+input("E-mail",'email')
+						+input("Пароль",'password')
+						+e.btn-wrap
+							.row.align-items-center
+								.col-auto.col-md-6
+									button.btn.btn-arrows.btn-primary(type="submit") Войти
+								.col-auto.col-md-6.my-2
+									a(href="#") Забыли пароль?
+				 
+			.col-12 Еще не активировали личный кабинет? Пройдите несложную активацию
+		 
+			.col-auto.mb-3
+				.btn.btn-outline-primary(href="#") Активировать личный кабинет
+			.col-auto.mb-3
+				.btn.btn-outline-primary(href="#") Зарегистрироваться
 			 
 	//- +headerBlock()
 	//- +sProgram
 	//- .bg-grad
 	//- 	+sPerson
 	//- 	+sNetworking 
-	+sContact()
+	//- +sContact()
 	+footer()
 
 
