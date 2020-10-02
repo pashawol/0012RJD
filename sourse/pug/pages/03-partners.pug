@@ -1,0 +1,24 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sNewsDetails/_sNewsDetails.pug
+include ../blocks/sNews/_sNews.pug
+include ../blocks/sPartners/_sPartners.pug
+
+block variables
+	- let  mainPage= 'body-white'
+block title
+	- let  title= 'Партнеры'
+	title= title
+block pagecontent 
+	+top-nav() 
+	+b.page-title
+		.container
+			h1= title 
+	+sPartners()
+	+footer()
+
+
+	

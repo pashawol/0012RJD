@@ -1,9 +1,16 @@
 mixin sPartners()
 	// start sPartners
-	+b.SECTION.sPartners.section#sPartners&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 sPartners
-				
+	+b.sPartners&attributes(attributes)
+		.container 
+			mixin item(data)
+				+e.col.col-2
+					+e.item(href="#")
+						+e.DIV.title= data.t
+						+e.DIV.img-wrap
+							img.res-i(src=`img/@2x/sPartner-${data.i}.png` loading="lazy", alt="")
 			.row
+				+item({
+					t: "",
+					i: "",
+				})
 	// end sPartners
