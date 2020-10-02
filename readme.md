@@ -6,3 +6,5 @@
 1. <https://pashawol.github.io/0012RJD/public/03-partners.html>
 1. <https://pashawol.github.io/0012RJD/public/07-speakers.html>
 1. <https://pashawol.github.io/0012RJD/public/08-participants.html>
+1. <https://pashawol.github.io/0012RJD/public/09-session.html>
+1. <https://pashawol.github.io/0012RJD/public/10-contacts.html>
