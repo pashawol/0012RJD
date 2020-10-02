@@ -168,11 +168,7 @@ function eventHandler() {
 	// добавляет подложку для pixel perfect
 	var x = window.location.host;
 	let screenName;
-<<<<<<< HEAD
 	screenName = 'main.jpg';
-=======
-	screenName = '13.jpg';
->>>>>>> 96e3344172baa4151cea45856d470bfa4462ec1e
 	if (screenName && x === "localhost:3000") {
 		$(".footer").after(`<div class="pixel-perfect" style="background-image: url(screen/${screenName});"></div>`);
 	}

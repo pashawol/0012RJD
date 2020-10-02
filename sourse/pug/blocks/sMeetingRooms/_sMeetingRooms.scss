@@ -12,6 +12,7 @@
 		height: calc(100% - 32px);
 		margin-bottom: rem(32px);
 		padding: rem(15px) rem(15) 0;
+		color: #ffffff !important;
 		@include media-breakpoint-up(sm) {
 			padding: rem(17px) rem(22) 0;
 		}

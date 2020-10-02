@@ -1,6 +1,5 @@
 	// start .sEvents
 .sEvents {
-<<<<<<< HEAD
 	.section-title{
 		padding-bottom: rem(20);
 	}
@@ -50,8 +49,6 @@
 		margin-top: rem(15);
 		margin-bottom: rem(17);
 	}
-=======
->>>>>>> 96e3344172baa4151cea45856d470bfa4462ec1e
 
 	padding-top: 20px;
 	padding-bottom: 52px;
@@ -104,19 +101,17 @@
 		.h6{
 			font-weight: 300;
 		}
-<<<<<<< HEAD
 		&--main{
 			min-height: calc(100% - 14px);
-=======
-
+		}
 		&.inactive {
 			background: #10151F;
 			pointer-events: none;
+
 			.sEvents__star {
 				display: none;
 			}
->>>>>>> 96e3344172baa4151cea45856d470bfa4462ec1e
-		}
+			}
 	}
 
 	&__star{
