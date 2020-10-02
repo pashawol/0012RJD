@@ -58,5 +58,57 @@ mixin sNews2()
 				+item(1, `14.04.2021`)
 				+item(2, `14.04.2021`)
 				+item(3, `14.04.2021`)
-			 
+
+
+mixin sNews-contacts()
+	// start sNews
+	+b.sNews--contacts.section#sNews&attributes(attributes)
+		.container
+			.row
+				.col-lg-4
+					+form-wrap()(class="bg-white")
+						.h4 У вас есть вопрос?
+						p Напишите нам через форму обратной связи, и мы свяжемся с вами как можно быстрее.
+						+input('Ваше имя')
+						+input('Эл.почта','email')
+						+input('Ваш вопрос','textarea')
+						+e.btn--arrows.btn.btn-primary(type='submit') Задать вопрос
+						+polite
+				.col
+					mixin item(p,t,d,m)
+						+e.contactItem
+							+e.contactTitle= p
+							+e.name= t
+							if d
+								+e.position= d
+							block
+							if m
+								+e.mail(href=`mailto:${m}`)= m
+					+item('Руководитель проекта','Константин Курочкин','руководитель проектного отдела ИД "Гудок"','k.kurochkin@gudok.ru')
+						+e.tel(href="tel:+74959090818") #[span +7 495 909-08-18] доб. 70845
+					.row
+						.col-sm-6
+							+item('Техническая поддержка ','Анна Кофман','руководитель проектного отдела ИД "Гудок"','a.kofman@gudok.ru')
+								+e.tel(href="tel:+74959090818") #[span +7 (495) 909-08-18] доб. 70-786
+						.col-sm-6
+							+item('Контакты для СМИ','Анна Кофман','руководитель проектного отдела ИД "Гудок"','a.kofman@gudok.ru')
+								+e.tel(href="tel:+74959090818") #[span +7 (495) 909-08-18] доб. 70-786
+						.col-sm-6
+							+item('Связаться с организаторами','Дина Абдулдеянова')
+								+e.tel(href="tel:+74959090818") #[span +7 (495) 909-08-18] доб. 70852
+								+e.mail(href=`da@gudok.ru`) da@gudok.ru
+								br
+								+e.name Ирина Васильева
+								+e.tel(href="tel:+74959830818") #[span +7 495 983 0818] доб. 70744
+								+e.mail(href=`i.vasilieva@gudok.ru`) i.vasilieva@gudok.ru
+						.col-sm-6
+							+item('Работа с участниками','Елена Шапочанская')
+								+e.tel(href="tel:+74959090818") #[span +7 (495) 909-08-18] доб.70674
+								+e.mail(href=`e.shapochanskaya@gudok.ru`) e.shapochanskaya@gudok.ru
+								br
+								+e.name Станислав Веселицкий
+								+e.tel(href="tel:+74959090818") #[span + 7 (495) 909-0818] доб. 70812
+								+e.mail(href=`s.veselitskiy@gudok.ru`) s.veselitskiy@gudok.ru
+
+
 	// end sNews
