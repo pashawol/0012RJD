@@ -1,9 +1,61 @@
+mixin sSpeakersCard(i,name,t)
+	+b.sSpeakersCard
+		+e.front
+			+e.img-wrap.bg-wrap
+				if i
+					+pic(`speaker-${i}`,'','')
+			+e.text-wrap
+				+e.title= name
+				+e.text!= t
+		+e.back
+			+e.title= name
+			+e.text!= t
+			+e.btn.link-modal(href="#modal-speaker") Открыть биографию
+
 mixin sSpeakers()
 	// start sSpeakers
-	+b.SECTION.sSpeakers.section#sSpeakers&attributes(attributes)
+	+b.sSpeakers.section#sSpeakers&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sSpeakers
-				
+			+e.search
+				+input('Найти спикера','search')
+				+e.btnSearch(type='submit')
+					+icon('search')
 			.row
+				if block
+					block
+				else
+					.col-sm-6.col-lg-3
+						+sSpeakersCard('1.png','Алексей Гром','Генеральный директор, председатель правления АО «Объединенная транспортно- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+					.col-sm-6.col-lg-3
+						+sSpeakersCard('2.png','Олег Белозеров',`Генеральный директор&#8209;председатель правления ОАО&nbsp;"РЖД"`)
+					.col-sm-6.col-lg-3
+						+sSpeakersCard('3.png','Сергей Малозёмов','Автор и ведущий программ, НТВ')
+					.col-sm-6.col-lg-3
+						+sSpeakersCard('4.png','Люк Надаль','председатель правления, Группа GEFCO')
+					.col-sm-6.col-lg-3
+						+sSpeakersCard('5.png','Алексей Шило','Заместитель генерального директора ОАО «РЖД» ...')
+					.col-sm-6.col-lg-3
+						+sSpeakersCard('6.png','Сабрина Суссан','Сименс Мобильность')
+					.col-sm-6.col-lg-3
+						+sSpeakersCard('4.png','Люк Надаль','председатель правления, Группа GEFCO')
+					.col-sm-6.col-lg-3
+						+sSpeakersCard('6.png','Сабрина Суссан','Сименс Мобильность')
+					.col-sm-6.col-lg-3
+						+sSpeakersCard('2.png','Олег Белозеров',`Генеральный директор&#8209;председатель правления ОАО&nbsp;"РЖД"`)
+					.col-sm-6.col-lg-3
+						+sSpeakersCard('7.png','Евгений Дитрих','Министр транспорта Российской Федерации')
+					.col-sm-6.col-lg-3
+						+sSpeakersCard('1.png','Алексей Гром','Генеральный директор, председатель правления АО «Объединенная транспортно- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+					.col-sm-6.col-lg-3
+						+sSpeakersCard('2.png','Олег Белозеров','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+					.col-sm-6.col-lg-3
+						+sSpeakersCard('8.png','Жоэль Жантиль','Старший вице-президент по контейнерной и интермодальной логистике, CMA CGM')
+					.col-sm-6.col-lg-3
+						+sSpeakersCard('4.png','Люк Надаль','председатель правления, Группа GEFCO')
+					.col-sm-6.col-lg-3
+						+sSpeakersCard('6.png','Сабрина Суссан','Сименс Мобильность')
+					.col-sm-6.col-lg-3
+						+sSpeakersCard('5.png','Алексей Шило','Заместитель генерального директора ОАО «РЖД» ...')
+
+			+pugin()
 	// end sSpeakers
