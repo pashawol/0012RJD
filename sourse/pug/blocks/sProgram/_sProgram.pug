@@ -1,0 +1,44 @@
+mixin sProgram()
+	// start sProgram
+	+b.SECTION.sProgram--main#sProgram&attributes(attributes) 
+		.container
+			+b.section-title.text-center
+				h2 Деловая программа
+				.d-xl-none
+					+arrow
+			+e.slider-wrap
+				+e.slider--js.swiper-container
+					.swiper-wrapper
+						mixin slide(i, t1)
+							+e.slide.swiper-slide
+								+e.item.bg-wrap(href="#")
+									img.img-bg.swiper-lazy(src="#" data-src=`img/@2x/slide-${i}.jpg`, alt="")
+									+e.date 17 сентября
+									+e.title--sub!= t1
+									+e.title!= t1
+						+slide('1',`ВРЕМЯ  ИДТИ  К&nbsp;ЦЕЛИ`)
+						+slide('2',`ВРЕМЯ МЕНЯТЬСЯ`)
+						+slide('3',`ВРЕМЯ РАСТИ`)
+						+slide('3',`ВРЕМЯ РАСТИ`)
+	// end sProgram
+mixin sProgram-5()
+	// start sProgram
+	+b.sProgram--page#sProgram&attributes(attributes) 
+		.container 
+			+e.slider-wrap--page
+				+e.slider--js.swiper-container
+					.swiper-wrapper
+						mixin slide(i, t1)
+							+e.slide.swiper-slide
+								+e.item.bg-wrap(href="#")
+									img.img-bg.swiper-lazy(src="#" data-src=`img/@2x/slide-${i}.jpg`, alt="")
+									+e.date 17 сентября
+									//- +e.title--sub!= t1
+									+e.title!= t1
+						+slide('1',`ВРЕМЯ  ИДТИ  К&nbsp;ЦЕЛИ`)
+						+slide('2',`ВРЕМЯ МЕНЯТЬСЯ`)
+						+slide('3',`ВРЕМЯ РАСТИ`)
+						+slide('3',`ВРЕМЯ РАСТИ`)
+			
+				+arrow
+	// end sProgram

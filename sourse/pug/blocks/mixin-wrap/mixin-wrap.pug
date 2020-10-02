@@ -32,105 +32,70 @@ mixin page-title(t)
 
 mixin reg(b="Зарегистрироваться")
 	+b.form-wrap(class="form-wrap--border")
-		.container
-			.h6.mb-4 Пожалуйста, заполните анкету латинскими буквами
-				br
-				| Please fill in the application form with Latin letters
+			form(action='/file-upload'  enctype="multipart/form-data")
+				//- .dropzone(action='/file-upload'  enctype="multipart/form-data")
+				.row
+					
+					.col-lg-6
+						+input("",'text','Фамилия')
+					.col-lg-6
+						+input("",'text','Имя')
+					.col-lg-6
+						+input("",'text','Отчество')
+					.col-lg-6
+					.col-lg-6
+						+input("",'text','Фамилия на английском')
+					.col-lg-6
+						+input("",'text','Имя на английском')
+					.col-lg-6
+						+e.input-wrap.form-group
+							label
+								+b.SPAN.input-title Страна  
+								+e.SELECT.input.form-control
+									option Россия
+									option Казахстан
+									option Азербайджан
+					.col-lg-6
+						+input("",'text','Город')
+					.col-lg-12
+						+input("",'text','Название компании')
+					.col-lg-12
+						+input("",'text','Название компании на английском')
+					.col-lg-6
+						+input("",'text','Должность')
+					.col-lg-6
+						+input("",'text','Должность на английском')
+					.col-lg-6
+						+input("+7 921 000 00 00",'tel','Телефон')
+					.col-lg-6
+					 
+					.col-lg-6 
+						+input("",'text','Пароль')
+					.col-lg-6 
+						+input("",'text','Повторите пароль')
+					.col-lg-12
+						label.dropzone-wrapper.d-block
+							+b.dropzone(action='/file-upload')
+								#dropzone
+									+e.prev-wrap 
+										span.strong +
+											br
+											| добавить
+											br
+											| фото
+										
+									.fallback
+										input(name='file', type='file', multiple='')
+							//- +e.file Выбрать фото
+					.col-lg-6.my-4
+						button.btn.btn-primary.btn-arrows.w-100(type="submit")= b
+					.col-lg-12
+						+in-c()
+							+e.SPAN.text Согласие на получение сообщений от других участников
 
-			.row
-				.col
-					form(action='/file-upload'  enctype="multipart/form-data")
-						//- .dropzone(action='/file-upload'  enctype="multipart/form-data")
-						.row
-							.col-lg-6
-								+input("",'text','Фамилия / Surname')
-							.col-lg-6
-								+input("",'text','Имя / Name')
-							.col-lg-6
-								+input("",'tel','Телефон / Phone Number')
-							.col-lg-6
-								+input("",'email','Почта/E-mail')
-							
-							.col-lg-6
-								+e.input-wrap.form-group
-									label
-										+b.SPAN.input-title В каком году планируете поступать? / When do you plan to commence your studies?
-
-										+e.SELECT.input.form-control
-											option  2021
-											option 2022
-											option 2023 и позднее
-							.col-lg-6
-								+e.input-wrap.form-group
-									label
-										+b.SPAN.input-title Какое у Вас образование?/ What is your Education Level?
-										+e.SELECT.input.form-control
-											option аттестат 11 классов
-											option средне-специальное образование
-											option аттестат 11 классов+один курс вуза 
-											option бакалавриат
-											option магистратура
-						 
-							.col-lg-6
-								+e.input-wrap.form-group
-									+b.SPAN.input-title Каким языком вы владеете? / What language are you proficient in?
-									.row
-										.col-auto
-											+in-c()
-												+e.SPAN.text английский
-										.col-auto
-											+in-c()
-												+e.SPAN.text итальянский
-							.col-lg-6 
-								+e.input-wrap.form-group
-									label
-										+b.SPAN.input-title Страна проживания / Country of residence
-										+e.SELECT.input.form-control
-											option Россия
-											option Казахстан
-											option Азербайджан
-							.col-lg-12
-								+e.input-wrap.form-group
-									label
-										+b.SPAN.input-title Какое направление вас интересует? / What field of studies are you interested in?
-										+e.SELECT.input.form-control
-											option ЭКОНОМИКА, ФИНАНСЫ, УПРАВЛЕНИЕ БИЗНЕСОМ/ ECONOMICS, FINANCE, BUSINESS MANAGEMENT
-											option ПОЛИТОЛОГИЯ, МЕЖДУНАРОДНЫЕ ОТНОШЕНИЯ/ POLITICAL SCIENCE, INTERNATIONAL RELATIONS
-											option ЮРИСПРУДЕНЦИЯ/ LAW AND LEGAL STUDIES
-											option ИНФОРМАТИКА И КИБЕРБЕЗОПАСНОСТЬ/ COMPUTER SCIENCES AND CYBERSECURITY
-											option АРХИТЕКТУРА И СТРОИТЕЛЬСТВО/ ARCHITECTUR
-											option ИНЖЕНЕРНОЕ ДЕЛО/ ENGINEERING
-											option ЕСТЕСТВЕННЫЕ НАУКИ/NATURAL SCIENCES
-											option STATISTICA/ STATISTICS
-											option МЕДИЦИНА И ХИРУРГИЯ/ MEDICINE AND SURGERY
-											option ФАРМАЦЕВТИКА/ PHARMACY
-											option ВЕТЕРИНАРИЯ/ VETERINARY MEDICINE
-											option ПСИХОЛОГИЯ/ PSYCHOLOGY
-											option КОММУНИКАЦИИ, PR, РЕКЛАМА/ COMMUNICATION, PUBLIC RELATION AND ADVERTISING
-											option ТУРИЗМ/ TOURISM
-											option ГУМАНИТАРНЫЕ НАУКИ/ HUMANITIES
-											option ПЕДАГОГИКА И ПРОФЕССИОНАЛЬНАЯ ПОДГОТОВКА/ EDUCATION AND TRAINING SCIENCES
-											option ЛИНГВИСТИКА/ LANGUAGE STUDIES
-											option ДИЗАЙН/МОДА/ DESIGN & FASHION
-											option КУЛИНАРИЯ И КОНДИТЕРСКОЕ ДЕЛО/ CULINARY AND PASTRY
-											option СЕЛЬСКОЕ ХОЗЯЙСТВО, ЛЕСНОЕ ХОЗЯЙСТВО И ПИЩЕВЫЕ НАУКИ/ AGRICULTURAL, FORESTRY AND FOOD SCIENCES
-											option МУЗЫКА/ MUSIC
-
-							.w-100
-							.col-lg-6
-								+input("",'password','Пароль')
-							.col-lg-6
-								+input("",'password','Повторите пароль')
-							.w-100
-							.col-lg-6.mb-4
-								+e.btn.w-100.ttu(type="submit")= b
-							.col-12
-								+in-c()
-									+e.SPAN.text Я согласен #[a(href="#") на обработку моих персональных данных] 
-				.col-lg-auto
-					+e.aside 
-						.h6.strong.mb-4 Пояснение к регистрации
-						+e.aside-text.text-secondary Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации
+						br
+						+in-c()
+							+e.SPAN.text Согласен на обработку #[a(href="#") персональных данных]
 mixin login(b="Зарегистрироваться")
 	+b.form-wrap(class="form-wrap--border")
 		.container

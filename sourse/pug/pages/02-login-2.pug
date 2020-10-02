@@ -1,0 +1,58 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+//- include ../blocks/sProgram/_sProgram.pug
+//- include ../blocks/sPerson/_sPerson.pug
+//- include ../blocks/sNetworking/_sNetworking.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'Вход в личный кабинет '
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	+header()
+		+top-nav()
+	+b.page-title
+		.container
+			.row
+				.col-auto
+					+e.link(href="#") 
+						+icon("arrow-back")
+				.col
+					h1= title 
+	+b.sLogin
+		.container
+			.row
+				.col-xl-5.col-lg-6
+					+form-wrap
+						+input("E-mail",'email')
+						+input("Пароль",'password')
+						+e.btn-wrap
+							.row.align-items-center
+								.col-auto.col-md-6
+									button.btn.btn-arrows.btn-primary(type="submit") Войти
+								.col-auto.col-md-6.my-2
+									a(href="#") Забыли пароль?
+				 
+				.col-12
+					p Еще не активировали личный кабинет? Пройдите несложную активацию
+			
+				.col-auto.mb-3
+					.btn.btn-outline-primary(href="#") Активировать личный кабинет
+				.col-auto.mb-3
+					.btn.btn-outline-primary(href="#") Зарегистрироваться
+			 
+	//- +headerBlock()
+	//- +sProgram
+	//- .bg-grad
+	//- 	+sPerson
+	//- 	+sNetworking 
+	//- +sContact()
+	+footer()
+
+
+	

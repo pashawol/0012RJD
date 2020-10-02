@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Регистрация</title>
+		<meta name="description" content="о чем страница">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+		<link rel="shortcut icon" type="image/ico" href="img/favicon/favicon.ico"><meta name="format-detection" content="telephone=no">
+		<!-- Custom Browsers Color-->
+		<meta name="theme-color" content="#3361d8">
+		<link rel="stylesheet" href="libs/swiper/css/swiper.min.css"/>
+		<link rel="stylesheet" href="js/dropzone.min.css"/>
+		<link rel="stylesheet" href="libs/@fancyapps/fancybox/jquery.fancybox.min.css"/>
+		<link rel="stylesheet" href="css/main.min.css"/>
+	</head>
+	<body>
+		<div class="main-wrapper">
+			<!-- start header-->
+			<header class="header" id="header">
+				<!-- start top-nav-->
+				<div class="top-nav block-with-lazy">
+					<div class="container">
+						<div class="row">
+							<div class="col-auto"><a class="top-nav__logo" href="/"><img src="img/@2x/logo.png" alt=""/></a>
+							</div>
+							<div class="col-lg-auto col"><a class="top-nav__logo" href="#"><img src="img/svg/logo-2.svg" alt=""/></a>
+							</div>
+							<div class="col-auto d-lg-none">
+								<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+								</div>
+							</div>
+							<div class="top-nav__col col-lg">
+								<div class="nav-wrap">
+									<div class="row">
+										<div class="col-lg">
+											<ul class="navMenu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+												<li class="navMenu__item" itemprop="item"><a class="navMenu__link text-primary" href="#" itemprop="url"> Программа </a>
+												</li>
+												<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Спикеры</a>
+												</li>
+												<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Участники</a>
+												</li>
+												<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Выставка</a>
+												</li>
+												<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Пресс-центр </a>
+												</li>
+												<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Партнеры</a>
+												</li>
+												<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Переговорные комнаты</a>
+												</li>
+												<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Контакты</a>
+												</li>
+											</ul>
+										</div>
+										<div class="col-auto"><a class="top-nav__btn top-nav__btn--lang btn-outline-primary active" href="#">Ru</a><a class="top-nav__btn top-nav__btn--lang btn-outline-primary" href="#">En</a>
+										</div>
+										<div class="col-auto"><a class="top-nav__btn top-nav__btn--cabinet btn-primary" href="#">Личный кабинет </a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end top-nav-->
+			</header>
+			<!-- end header-->
+			<div class="page-title">
+				<div class="container">
+					<div class="row">
+						<div class="col-auto"><a class="page-title__link" href="#"> 
+							<svg class="icon icon-arrow-back ">
+								<use xlink:href="img/svg/sprite.svg#arrow-back"></use>
+							</svg></a>
+						</div>
+						<div class="col">
+							<h1>Регистрация</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sLogin">
+				<div class="container"> 
+					<div class="form-wrap form-wrap form-wrap--border">
+						<form action="/file-upload" enctype="multipart/form-data">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="form-wrap__input-wrap form-group">
+										<label><span class="input-title">Фамилия</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+										</label>
+									</div>
+									<!-- +e.input-wrap-->
+								</div>
+								<div class="col-lg-6">
+									<div class="form-wrap__input-wrap form-group">
+										<label><span class="input-title">Имя</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+										</label>
+									</div>
+									<!-- +e.input-wrap-->
+								</div>
+								<div class="col-lg-6">
+									<div class="form-wrap__input-wrap form-group">
+										<label><span class="input-title">Отчество</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+										</label>
+									</div>
+									<!-- +e.input-wrap-->
+								</div>
+								<div class="col-lg-6"></div>
+								<div class="col-lg-6">
+									<div class="form-wrap__input-wrap form-group">
+										<label><span class="input-title">Фамилия на английском</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+										</label>
+									</div>
+									<!-- +e.input-wrap-->
+								</div>
+								<div class="col-lg-6">
+									<div class="form-wrap__input-wrap form-group">
+										<label><span class="input-title">Имя на английском</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+										</label>
+									</div>
+									<!-- +e.input-wrap-->
+								</div>
+								<div class="col-lg-6">
+									<div class="form-wrap__input-wrap form-group">
+										<label><span class="input-title">Страна  </span>
+											<select class="form-wrap__input form-control">
+												<option>Россия</option>
+												<option>Казахстан</option>
+												<option>Азербайджан</option>
+											</select>
+										</label>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-wrap__input-wrap form-group">
+										<label><span class="input-title">Город</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+										</label>
+									</div>
+									<!-- +e.input-wrap-->
+								</div>
+								<div class="col-lg-12">
+									<div class="form-wrap__input-wrap form-group">
+										<label><span class="input-title">Название компании</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+										</label>
+									</div>
+									<!-- +e.input-wrap-->
+								</div>
+								<div class="col-lg-12">
+									<div class="form-wrap__input-wrap form-group">
+										<label><span class="input-title">Название компании на английском</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+										</label>
+									</div>
+									<!-- +e.input-wrap-->
+								</div>
+								<div class="col-lg-6">
+									<div class="form-wrap__input-wrap form-group">
+										<label><span class="input-title">Должность</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+										</label>
+									</div>
+									<!-- +e.input-wrap-->
+								</div>
+								<div class="col-lg-6">
+									<div class="form-wrap__input-wrap form-group">
+										<label><span class="input-title">Должность на английском</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+										</label>
+									</div>
+									<!-- +e.input-wrap-->
+								</div>
+								<div class="col-lg-6">
+									<div class="form-wrap__input-wrap form-group">
+										<label><span class="input-title">Телефон</span><input class="form-wrap__input form-control" type="tel" placeholder="+7 921 000 00 00" name="tel"/>
+										</label>
+									</div>
+									<!-- +e.input-wrap-->
+								</div>
+								<div class="col-lg-6"></div>
+								<div class="col-lg-6"> 
+									<div class="form-wrap__input-wrap form-group">
+										<label><span class="input-title">Пароль</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+										</label>
+									</div>
+									<!-- +e.input-wrap-->
+								</div>
+								<div class="col-lg-6"> 
+									<div class="form-wrap__input-wrap form-group">
+										<label><span class="input-title">Повторите пароль</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+										</label>
+									</div>
+									<!-- +e.input-wrap-->
+								</div>
+								<div class="col-lg-12">
+									<label class="dropzone-wrapper d-block">
+										<div class="dropzone" action="/file-upload">
+											<div id="dropzone">
+												<div class="dropzone__prev-wrap"> <span class="strong">+<br/>добавить<br/>фото</span>
+												</div>
+												<div class="fallback">
+													<input name="file" type="file" multiple=""/>
+												</div>
+											</div>
+										</div>
+									</label>
+								</div>
+								<div class="col-lg-6 my-4">
+									<button class="btn btn-primary btn-arrows w-100" type="submit">Зарегистрироваться</button>
+								</div>
+								<div class="col-lg-12">
+									<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox"/><span class="custom-input__lab"></span><span class="custom-input__text">Согласие на получение сообщений от других участников</span>
+									</label><br/>
+									<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox"/><span class="custom-input__lab"></span><span class="custom-input__text">Согласен на обработку <a href="#">персональных данных</a></span>
+									</label>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="footer__col col-lg-auto"><img class="res-i" src="img/svg/logo-head-foot.svg" loading="lazy" alt=""/>
+						</div>
+						<div class="footer__col col"><img src="img/svg/footer-logo.svg" loading="lazy" alt=""/>
+						</div>
+						<div class="col-lg-auto">
+							<div class="soc"><a class="soc__item" href="#" target="_blank">
+								<svg class="icon icon-vk ">
+									<use xlink:href="img/svg/sprite.svg#vk"></use>
+								</svg></a><a class="soc__item" href="#" target="_blank">
+								<svg class="icon icon-fb ">
+									<use xlink:href="img/svg/sprite.svg#fb"></use>
+								</svg></a><a class="soc__item" href="#" target="_blank">
+								<svg class="icon icon-instagram ">
+									<use xlink:href="img/svg/sprite.svg#instagram"></use>
+								</svg></a><a class="soc__item" href="#" target="_blank">
+								<svg class="icon icon-youtube ">
+									<use xlink:href="img/svg/sprite.svg#youtube"></use>
+								</svg></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!--  start modals-->
+		<div class="modal-win" id="modal-ask-question" style="display: none">
+			<div class="form-wrap">
+				<form>
+					<input type="hidden" name="example-input-field"/>
+					<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
+					<input class="utm_source" type="hidden" name="utm_source"/>
+					<input class="utm_term" type="hidden" name="utm_term"/>
+					<input class="utm_medium" type="hidden" name="utm_medium"/>
+					<input class="utm_campaign" type="hidden" name="utm_campaign"/>
+					<div class="form-wrap__title form-data h3 ttu">Задать вопрос
+					</div>
+					<div class="form-wrap__input-wrap form-group">
+						<label><span class="input-title">Выберите спикера</span>
+							<select class="form-wrap__input form-control" name="select">
+								<option value="Не выбрано">Не выбрано</option>
+								<option value=" placeholder 1">placeholder dfssfsd dfsdfd sads 1</option>
+								<option value=" placeholder 2">placeholder dfssfsd dfsdfd sads 2</option>
+								<option value=" placeholder 3">placeholder dfssfsd dfsdfd sads 3</option>
+								<option value=" placeholder 4">placeholder dfssfsd dfsdfd sads 4</option>
+							</select>
+						</label>
+					</div>
+					<!-- +e.input-wrap-->
+					<div class="form-wrap__input-wrap form-group">
+						<label><span class="input-title">Вопрос для спикера</span><textarea class="form-wrap__input form-control" placeholder="Вопрос для спикера" name="textarea"></textarea>
+						</label>
+					</div>
+					<!-- +e.input-wrap-->
+					<div class="row">
+						<div class="col-sm-auto order-sm-last mb-2">
+							<button class="form-wrap__btn btn btn-primary btn-block" type="submit"> Отправить
+							</button>
+						</div>
+						<div class="col small mb-2">Вы можете задать любой вопрос спикеру, но прежде чем они будут им доставленны они пройдут предварительную премодерацию.</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- #modal-call -->
+		<div class="modal-win modal-win--lg" id="modal-edit" style="display: none">
+			<div class="form-wrap form-wrap form-wrap--border">
+				<form action="/file-upload" enctype="multipart/form-data">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Фамилия</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+						<div class="col-lg-6">
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Имя</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+						<div class="col-lg-6">
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Отчество</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+						<div class="col-lg-6"></div>
+						<div class="col-lg-6">
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Фамилия на английском</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+						<div class="col-lg-6">
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Имя на английском</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+						<div class="col-lg-6">
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Страна  </span>
+									<select class="form-wrap__input form-control">
+										<option>Россия</option>
+										<option>Казахстан</option>
+										<option>Азербайджан</option>
+									</select>
+								</label>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Город</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+						<div class="col-lg-12">
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Название компании</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+						<div class="col-lg-12">
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Название компании на английском</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+						<div class="col-lg-6">
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Должность</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+						<div class="col-lg-6">
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Должность на английском</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+						<div class="col-lg-6">
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Телефон</span><input class="form-wrap__input form-control" type="tel" placeholder="+7 921 000 00 00" name="tel"/>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+						<div class="col-lg-6"></div>
+						<div class="col-lg-6"> 
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Пароль</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+						<div class="col-lg-6"> 
+							<div class="form-wrap__input-wrap form-group">
+								<label><span class="input-title">Повторите пароль</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+						<div class="col-lg-12">
+							<label class="dropzone-wrapper d-block">
+								<div class="dropzone" action="/file-upload">
+									<div id="dropzone">
+										<div class="dropzone__prev-wrap"> <span class="strong">+<br/>добавить<br/>фото</span>
+										</div>
+										<div class="fallback">
+											<input name="file" type="file" multiple=""/>
+										</div>
+									</div>
+								</div>
+							</label>
+						</div>
+						<div class="col-lg-6 my-4">
+							<button class="btn btn-primary btn-arrows w-100" type="submit">Сохранить</button>
+						</div>
+						<div class="col-lg-12">
+							<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox"/><span class="custom-input__lab"></span><span class="custom-input__text">Согласие на получение сообщений от других участников</span>
+							</label><br/>
+							<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox"/><span class="custom-input__lab"></span><span class="custom-input__text">Согласен на обработку <a href="#">персональных данных</a></span>
+							</label>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- #modal-call-->
+		<div class="modal-win" id="modal-reg" style="display: none">
+			<div class="text-center"> 
+				<div class="h5">Чат будет доступен в&nbsp;день мероприятия. А&nbsp;сейчас&nbsp;Вы можете 	зарегистрироваться </div><a class="btn btn-danger" href="#">Регистрация</a>
+			</div>
+		</div>
+		<!-- #modal-call-->
+		<div class="modal-win" id="modal-signup" style="display: none">
+			<div class="form-wrap">
+				<form>
+					<input type="hidden" name="example-input-field"/>
+					<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
+					<input class="utm_source" type="hidden" name="utm_source"/>
+					<input class="utm_term" type="hidden" name="utm_term"/>
+					<input class="utm_medium" type="hidden" name="utm_medium"/>
+					<input class="utm_campaign" type="hidden" name="utm_campaign"/>
+					<div class="form-wrap__input-wrap form-group">
+						<label><span class="input-title">Страна</span>
+							<select class="form-wrap__input form-control">
+								<option>Россия</option>
+								<option>Казахстан</option>
+								<option>Азербайджан</option>
+							</select>
+						</label>
+					</div>
+					<div class="form-wrap__input-wrap form-group">
+						<label><span class="input-title">Дата</span>
+							<select class="form-wrap__input form-control">
+								<option>16 октября  </option>
+								<option>17 октября</option>
+							</select>
+						</label>
+					</div>
+					<div class="form-wrap__input-wrap form-group">
+						<label><span class="input-title">Время</span>
+							<select class="form-wrap__input form-control">
+								<option>14:00</option>
+								<option>14:30</option>
+								<option>15:00</option>
+								<option>15:30</option>
+								<option>16:00</option>
+								<option>16:30</option>
+								<option>17:00</option>
+								<option>17:30</option>
+							</select>
+						</label>
+					</div>
+					<button class="form-wrap__btn" type="submit">Записаться
+					</button>
+				</form>
+			</div>
+		</div>
+		<div class="modal-win modal-content" id="modal-content" style="display: none">
+			<div class="modal-inner"></div>
+		</div>
+		<!-- #modal-call -->
+		<!-- end modals-->
+		<script src="libs/loading-attribute-polyfill/loading-attribute-polyfill.min.js"></script>
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="js/dropzone.min.js"></script>
+		<!-- modal libs-->
+		<script src="libs/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
+		<!-- modal libs-->
+		<!-- slider libs-->
+		<script src="libs/swiper/js/swiper.min.js"></script>
+		<!-- /slider libs-->
+		<script src="libs/inputmask/inputmask.min.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+mixin sNetworking()
+	// start sNetworking
+	+b.SECTION.sNetworking.section.text-center#sNetworking&attributes(attributes)
+		.container
+			+e.element--1
+				img(src="img/svg/before.svg" loading="lazy", alt="")
+			+e.element--2
+				img(src="img/svg/before.svg" loading="lazy", alt="")
+			+b.section-title
+				h2 Нетворкинг 
+			.row
+				mixin item(i,t)
+					+e.col.col-sm-4
+						+e.item(href="#modal-reg").link-modal
+							+e.icon-wrap
+								img(src=`img/svg/sNetworking-i-${i}.svg` loading="lazy", alt="")
+							+e.title= t
+				+item('1','Персональный чат')
+				+item('2','Чаты по интересам')
+				+item('3','Вопросы спикеру')
+	// end sNetworking
