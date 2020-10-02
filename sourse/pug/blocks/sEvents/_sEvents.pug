@@ -32,60 +32,46 @@ mixin sEvents()
 					.pb-1.col-auto.text-light Пленарная дискуссия
 					.pb-1.col-auto ЗАЛ «ИННОВАЦИИ»
 
-	// end sEvents
-mixin sEvents8()
+
+mixin sEvents-12()
 	// start sEvents
 	+b.sEvents--page.section#sEvents&attributes(attributes)
 		.container
-				mixin content()
-					.tabs__content&attributes(attributes)
-						.tabs-inner
-							.tabs-inner__caption
-								block
-							div
-								mixin content2()
-									.tabs-inner__content&attributes(attributes)
-										mixin item(d,t, c)
-											+e.item
-												.row
-													.col.small!= d
-													.col-auto.order-sm-last 
-														+e.star(class= c)
-															+icon('star') 
-												.h6.strong: a.text-body(href="#") Studiare in Italia открывает ворота Италии
-												.text-secondary Studiare in Italy: your main door to Italian education
-										+e.group
-											+e.group-time 14:00
-											+item(`14:00 - 14:30`, `Распределенная продажа: предпосылки и&nbsp;перспективы`) 
-										+e.group
-											+e.group-time 14:30
-											+item(`14:00 - 14:30`, `Распределенная продажа: предпосылки и&nbsp;перспективы`, 'active') 
-										+e.group
-											+e.group-time 15:00
-											+item(`14:00 - 14:30`, `Распределенная продажа: предпосылки и&nbsp;перспективы`) 
-										+e.group
-											+e.group-time 14:00
-											+item(`14:00 - 14:30`, `Распределенная продажа: предпосылки и&nbsp;перспективы`) 
-										+e.group
-											+e.group-time 15:30
-											+item(`14:00 - 14:30`, `Распределенная продажа: предпосылки и&nbsp;перспективы`) 
-										+e.group
-											+e.group-time 16:00
-											+item(`14:00 - 14:30`, `Распределенная продажа: предпосылки и&nbsp;перспективы`) 
-										+e.group
-											+e.group-time 16:30
-											+item(`14:00 - 14:30`, `Распределенная продажа: предпосылки и&nbsp;перспективы`) 
-								+content2()(class="active")
-								+content2()
-				+content()(class="active")
-					.tabs-inner__btn.active 16.10.2020
-					.tabs-inner__btn 17.10.2020
-				+content()
-					.tabs-inner__btn.active 20.10.2020
-					.tabs-inner__btn 21.10.2020
+			mixin item(d,t,k,l,c,ev)
+				+e.item(href="#")&attributes(attributes)
+					+e.row.row
+						+e.col.col
+							.small!= d
+							if l
+								+e.location ЗАЛ «ИННОВАЦИИ»
+							else
+								+e.location ЗАЛ «СТРАТЕГИИ»
+							if ev
+								+e.event Пленарная дискуссия
+						.col-auto.order-sm-last 
+							+e.star(class= c)
+								+icon('star') 
+					.h4= t
+					if k
+						+e.whatHappen= k
+			.tabs-inner
+				.tabs-inner__caption
+					.tabs-inner__btn.active 22 октября
+					.tabs-inner__btn 23 октября
+					mixin content2()
+						.tabs-inner__content&attributes(attributes)
+							.row
+								+e.group.col-12
+									+item(`11.00 – 11.15`, `Церемония открытия.`,'Приветствие участников','l') 
+								+e.group.col-12
+									+item(`11.00 – 11.15`, `In Railway We Trust.`,'Глобальное сотрудничество в условиях неопределенности','l','','ev')
+								+e.group.col-12
+									+item(`12.45 – 12.55`, `Ведущий между сессиями`,'','l')(class="inactive")
+								+e.group.col-12.col-lg-6
+									+item(`12.55 – 14.10`, `Finance as a Masterpiece.`,'Как привлечь инвестиции в условиях кризиса?','l', 'active','ev') 
+								+e.group.col-12.col-lg-6
+									+item(`12.55 – 14.10`, `Название сессии`,'Как привлечь инвестиции в условиях кризиса?','','','ev') 
+				+content2()(class="active")
+				+content2()
 
-				+content()
-					.tabs-inner__btn.active 23.10.2020
-					.tabs-inner__btn 24.10.2020
-		
 	// end sEvents
