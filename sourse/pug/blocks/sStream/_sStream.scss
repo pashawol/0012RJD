@@ -3,6 +3,7 @@
 	.sStream {
 		--sPB:#{rem(30)};
 		color: $body-color;
+		max-width: rem(697);
 		&__wrap{
 			margin-bottom: rem(60);
 			.row{

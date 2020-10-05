@@ -48,13 +48,7 @@ mixin reg(b="Зарегистрироваться")
 					.col-lg-6
 						+input("",'text','Имя на английском')
 					.col-lg-6
-						+e.input-wrap.form-group
-							label
-								+b.SPAN.input-title Страна  
-								+e.SELECT.input.form-control
-									option Россия
-									option Казахстан
-									option Азербайджан
+						+input("",'text','Страна') 
 					.col-lg-6
 						+input("",'text','Город')
 					.col-lg-12
@@ -66,7 +60,7 @@ mixin reg(b="Зарегистрироваться")
 					.col-lg-6
 						+input("",'text','Должность на английском')
 					.col-lg-6
-						+input("+7 921 000 00 00",'tel','Телефон')
+						+input("+7 ___ ___ __ __",'tel','Телефон')
 					.col-lg-6
 					 
 					.col-lg-6 

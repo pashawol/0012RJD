@@ -141,6 +141,9 @@
 			flex-direction: column;
 			padding: rem(22px) rem(21) rem(28) rem(20);
 		}
+			@include media-breakpoint-down(sm){
+				display: none;
+			}
 		.sSpeakersCard__text{
 			@include ell(16);
 			@include media-breakpoint-down(sm) {

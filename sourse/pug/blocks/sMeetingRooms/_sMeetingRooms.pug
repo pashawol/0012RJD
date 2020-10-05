@@ -3,12 +3,23 @@ mixin sMeetingRooms()
 	+b.sMeetingRooms#sMeetingRooms&attributes(attributes)
 		.container
 			.row
-				mixin item(n)
+				mixin item(n, f)
 					+e.col.col-6.col-md-auto
-						+e.item(href="#")
-							+e.DIV.title Переговорная комната
+						+e.item(href="#")&attributes(attributes)
+							+e.head
+								+e.DIV.title Переговорная комната
+								if f
+									.toggle-el.text-primary.strong Свободна
+								else
+									.text-primary.strong
 							+e.DIV.numb= n
-				+item('#1')
+							+e.footer
+								if block
+									block
+								else
+									+e.footer-text.toggle-el  Переговорная занята до 18:00
+				+item('#1', 'f')(class="sMeetingRooms__item--free")
+					+e.btn.toggle-el Забронировать
 				+item('#2')
 				+item('#3')
 				+item('#4')

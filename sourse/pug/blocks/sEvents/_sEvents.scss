@@ -55,6 +55,8 @@
 		&--main {
 			padding-top: rem(70);
 			padding-bottom: rem(70);
+			background: #161C28;
+			margin-bottom: rem(70);
 		}
 	&__head{
 		font-size: rem(13);
@@ -94,6 +96,7 @@
 		padding-right: rem(60);
 		&--main{
 			padding-right: rem(25);
+			background: #0D1019;
 		}
 		.row{
 			align-items: center;

@@ -140,9 +140,9 @@ const JSCCommon = {
 		// mask for input
 		let InputTel = [].slice.call(document.querySelectorAll('input[type="tel"]'));
 		InputTel.forEach(function (element) {
-			element.setAttribute("pattern", "[+][0-9]{1}[(][0-9]{3}[)][0-9]{3}-[0-9]{2}-[0-9]{2}")
+			element.setAttribute("pattern", "[+][0-9]{1}[ ][0-9]{3}[ ][0-9]{3}[ ][0-9]{2}[ ][0-9]{2}")
 		});
-		Inputmask("+9(999)999-99-99").mask(InputTel);
+		Inputmask("+7 999 999 99 99").mask(InputTel);
 	},
 	// /inputMask
 	ifie() {
@@ -233,6 +233,29 @@ function eventHandler() {
 			loadPrevNext: true,
 		},
 	});
+	const swipersRew = new Swiper('.sRews__slider--js', {
+		// slidesPerView: 5,
+		...defaultSl,
+		slidesPerView: 1,
+		spaceBetween: 20,
+		loop: false,
+		navigation: {
+			nextEl: '.sRews .swiper-button-next',
+			prevEl: '.sRews .swiper-button-prev',
+		},
+		pagination: {
+			el: '.sRews .swiper-pagination',
+			type: 'bullets',
+			clickable: true, 
+		},
+		breakpoints: { 
+			992: {
+				spaceBetween: 39,
+				slidesPerView: 2
+			}, 
+		}
+	});
+	
 	const swipersSpeakers = new Swiper('.sSpeakers__slider--js', {
 		// slidesPerView: 5,
 		...defaultSl,
@@ -264,6 +287,7 @@ function eventHandler() {
 			},
 		}
 	});
+
 	const swiper4 = new Swiper('.sBanners__slider--js', {
 		// slidesPerView: 5,
 		...defaultSl,
