@@ -425,7 +425,13 @@
 				border: 1px solid #E1E4E9;
 				border-radius: 4px;
 				padding: rem(10) rem(17);
-				padding-right: rem(40);
+				@include media-breakpoint-up(md) {
+					padding-left: rem(17);
+					padding-right: rem(40);
+				}
+				padding-left: rem(50);
+				padding-right: rem(17);
+
 				width: 100%;
 				outline-color: rgba($color: $primary, $alpha: .5);
 			}
@@ -435,7 +441,11 @@
 				border: none;
 				box-shadow: none;
 				position: absolute;
-				right: rem(15);
+				@include media-breakpoint-up(md){
+					left: auto;
+					right: rem(15);
+				}
+				left: rem(10);
 				@include a-cent(y);
 
 				.icon {
