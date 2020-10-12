@@ -1,12 +1,20 @@
 // start .headerBlock
 .headerBlock {
 	padding-top: rem(30);
+	&--plug{
+		// min-height: 100vh;
+		flex-grow: 1;
+	}
   &__wrap{
 
 		margin-left: auto;
 		margin-right: auto;
 		max-width: rem(754);
 		padding-bottom: rem(65);
+		&--sm{
+			max-width: rem(645);
+
+		}
 	}
 	&__video{
 		z-index: 4;
@@ -98,3 +106,113 @@
 }
 
 // end.headerBlock
+
+.timer-block{
+	background: #2D3951;
+	position: relative;
+	z-index: 2;
+	&::before,
+	&::after{
+		content: '';
+		position: absolute;
+		height: 100%;
+		background-size: contain;
+		width: rem(100);
+		background-repeat: no-repeat;
+		z-index: -1;
+		top: 0;
+	}
+	padding: rem(25) rem(40);
+	&::after{
+		background-image: url(../img/@2x/timer-after.png);
+		right: 0;
+	}
+	&::before{
+		background-image: url(../img/@2x/timer-before.png);
+		left: 0;
+	}
+	.row{
+
+	}
+	&__btn{
+		position: relative;
+		color: #ffffff;
+		text-align: center;
+		@extend .btn;
+		width: rem(186);
+		height: rem(40);
+		font-weight: 500;
+		padding-right: rem(20);
+		margin-top: 1rem;
+		@include media-breakpoint-up(lg) {
+
+			margin-bottom: 1rem;
+		}
+
+		svg{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100% !important;
+			height: 100% !important;
+			z-index: -1;
+			@include mt;
+		}
+		path{
+			@include mt;
+		}
+		&:hover{
+			path{
+				fill: #b60009 !important;
+			}
+		}
+	}
+	&__timer-box{
+		text-align: center;
+	}
+	&__item{
+		width: rem(64px);
+		height: rem(64px);
+		font-size: rem(32);
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		background: #0D1019;
+		border-radius: 8px;
+		margin-left: auto;
+		margin-right: auto;
+		font-weight: bold;
+
+	}
+	&__sm{
+		font-size: rem(13);
+		padding-top: rem(7);
+
+	}
+	&__row-lg{
+		align-items: center;
+		// justify-content: space-between;
+		justify-content: center;
+		position: relative;
+		z-index: 4;
+	}
+	&__timer-box {
+			.col{
+				position: relative;
+				&:nth-child(2),
+				&:nth-child(3){
+					&::before{
+
+						content: ':';
+						position: absolute;
+						right: -4px;
+						color: #ffffff;
+						font-size: rem(32);
+						top: rem(10);
+						text-align: center;
+					}
+				}
+
+			}
+	}
+}

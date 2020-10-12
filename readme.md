@@ -17,3 +17,4 @@
 2. <https://pashawol.github.io/0012RJD/public/>
 1. <https://pashawol.github.io/0012RJD/public/12-program.html>
 1. <https://pashawol.github.io/0012RJD/public/13-meeting.html>
+1. <https://pashawol.github.io/0012RJD/public/plug.html>

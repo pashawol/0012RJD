@@ -36,3 +36,47 @@ mixin headerBlock()
 				+e.banner(href="#")
 					+pic("banner")
 	// end headerBlock
+mixin headerBlock-pl()
+	// start headerBlock
+	+b.headerBlock--plug.bg-wrap#headerBlock&attributes(attributes) 
+		+pic("head-bg-plug",'bg',0)(class="picture-bg")
+		.container
+			+e.row.row
+				+e.col.col-auto
+					img.res-i(src="img/svg/logo-head.svg" loading="lazy", alt="")
+			 
+				+e.col.col-auto.mr-lg-auto.text-center
+					+e.date 22-23 
+					+e.m ОКТЯБРЯ
+					+e.year 2020 
+				.col-lg-auto
+					a.top-nav__btn.top-nav__btn--lang.btn-outline-primary.active(href='#') Ru
+					a.top-nav__btn.top-nav__btn--lang.btn-outline-primary(href='#') En
+			+e.wrap--sm
+				+e.video.bg-wrap(href="https://www.youtube.com/watch?v=mbcP3Oc0PjU&list=PLqKQF2ojwm3l4oPjsB9chrJmlhZ-zOzWT&index=13" data-fancybox="videoGal")
+					+pic("video.jpg",'bg')(class="picture-bg") 
+				+e.text-block 
+					.h5.text-center.pb-3 До начала форума осталось 
+				+b.timer-block
+					+e.row-lg.row
+						.col-auto
+							+e.timer-box.row.timer-box-js(data-date="2020-10-22T11:00:00") 
+								.col
+									+e.item.days 00
+									+e.sm Дней
+								.col
+									+e.item.hours 00
+									+e.sm Часов
+								.col
+									+e.item.minutes 00
+									+e.sm Минут
+								.col
+									+e.item.seconds 00
+									+e.sm Секунд
+						.col-auto
+							+e.btn(href="https://railwayforum.ru/events/application.php?ELEMENT_ID=404&TYPE=so") Регистрация
+								<svg width="186" height="40" viewBox="0 0 186 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M169.601 0L181.419 20L169.601 40H166.763L178.43 20.2544L178.581 20L178.43 19.7456L166.763 0H169.601ZM170.763 0L182.43 19.7456L182.581 20L182.43 20.2544L170.763 40H186V0H170.763ZM177.419 20L165.601 0H162.763L174.43 19.7456L174.581 20L174.43 20.2544L162.763 40H165.601L177.419 20ZM161.601 0L173.419 20L161.601 40H158.763L170.43 20.2544L170.581 20L170.43 19.7456L158.763 0H161.601ZM169.419 20L157.601 0H0V40H157.601L169.419 20Z" fill="#DC000B"/>
+								</svg>
+
+	// end headerBlock
