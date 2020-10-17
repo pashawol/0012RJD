@@ -37,7 +37,10 @@
 				 margin-bottom: rem(60);
 				 
 				}
-				@include ell(5);
+				// @include ell(5);
+				height: 17em;
+				overflow: hidden;
+				position: relative;
 				margin-bottom: rem(30);
 		 }
 		 .btn{
