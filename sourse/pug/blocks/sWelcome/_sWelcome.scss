@@ -26,19 +26,24 @@
 		 p{
 			 
 			 font-weight: 300;
-			 margin-bottom: rem(20);
+			 margin-bottom: 1em;
 		 }
 		 &__slide{
 			 margin-bottom: rem(30);
 		 }
 		 &__cut{
+			 p{
+				 @extend .h6;
+				 line-height: 1.6 !important;
+			 }
 			 @include media-breakpoint-up(lg){
-				 @include ell(10);
+				//  @include ell(10);
 				 margin-bottom: rem(60);
 				 
+				 height: 17em;
 				}
+				height: 7em;
 				// @include ell(5);
-				height: 17em;
 				overflow: hidden;
 				position: relative;
 				margin-bottom: rem(30);

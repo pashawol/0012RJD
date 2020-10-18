@@ -334,7 +334,11 @@ function eventHandler() {
 		}
 	}
 
-	CountDown('.timer-box-js');
+	var timer = document.querySelector('.timer-box-js');
+
+	if (timer) {
+		CountDown(timer);
+	}
 }
 
 ;

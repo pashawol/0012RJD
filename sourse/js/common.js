@@ -370,7 +370,11 @@ function eventHandler() {
 			}, 1000);
 		}
 	}
-	CountDown('.timer-box-js');
+	let timer = document.querySelector('.timer-box-js');
+	if (timer) {
+		
+		CountDown(timer);
+	}
 	};
 	if (document.readyState !== 'loading') {
 		eventHandler();
