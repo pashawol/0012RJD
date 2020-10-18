@@ -3,7 +3,10 @@
 	.sWelcome {
 		--sPT: #{rem(80)};
 		--sPB: #{rem(60)};
-		background-image: url(../img/@2x/sWelcome-bg.png);
+		 @include media-breakpoint-up(lg){
+
+			 background-image: url(../img/@2x/sWelcome-bg.png);
+		 }
 		background-repeat: no-repeat;
 		background-size: inherit;
 		background-position: 0 calc(100% - 100px);
