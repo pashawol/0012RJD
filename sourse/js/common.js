@@ -219,7 +219,10 @@ function eventHandler() {
 	}
 	const swiper6 = new Swiper('.sWelcome__slider--js', {
 		// slidesPerView: 5,
-
+		loop: true,
+		autoplay: {
+			delay: 9000,
+		},
 		navigation: {
 			nextEl: '.sWelcome .swiper-button-next',
 			prevEl: '.sWelcome .swiper-button-prev',

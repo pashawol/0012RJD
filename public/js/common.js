@@ -205,6 +205,10 @@ function eventHandler() {
 	}, _defineProperty(_defaultSl, "spaceBetween", 0), _defineProperty(_defaultSl, "loop", true), _defaultSl);
 	var swiper6 = new Swiper('.sWelcome__slider--js', {
 		// slidesPerView: 5,
+		loop: true,
+		autoplay: {
+			delay: 9000
+		},
 		navigation: {
 			nextEl: '.sWelcome .swiper-button-next',
 			prevEl: '.sWelcome .swiper-button-prev'
