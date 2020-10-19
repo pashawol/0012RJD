@@ -20,6 +20,9 @@ mixin sWelcome()
 								.col-lg-6.order-first
 									+e.img-wrap
 										img.res-i.swiper-lazy(src="#" data-src="img/@2x/man.png", alt="")
+									+e.caption
+										.h6.strong Олег Белозёров
+										p Генеральный директор - председатель правления ОАО «РЖД»
 								+e.col.col-lg-6
 									h6 ОБРАЩЕНИЕ ГЕНЕРАЛЬНОГО ДИРЕКТОРА - ПРЕДСЕДАТЕЛЯ ПРАВЛЕНИЯ ОАО «РЖД»              #[strong ОЛЕГА БЕЛОЗЁРОВА]
 									p: strong Уважаемые коллеги! 
@@ -28,11 +31,8 @@ mixin sWelcome()
 												| От имени ОАО «РЖД» приветствую участников Международного транспортно-логистический форума «PRO//Движение.1520»!
 												| Сегодня для компании «РЖД» и всех наших партнеров как никогда важен созидательный диалог и сохранение тенденций развития железнодорожных грузовых перевозок в условиях новой реальности.
 											 
-								.col-lg-6.order-lg-0.order-first
-									+e.caption
-										.h6.strong Олег Белозёров
-										p Генеральный директор - председатель правления ОАО «РЖД»
-								.col-lg-6.align-self-center
-									a.btn.btn-primary.btn-arrows.link-modal(href="#modal-welcome") Читать полностью
+								//- .col-lg-6.order-lg-0.order-first
+								//- .col-lg-6.align-self-center
+								//- 	a.btn.btn-primary.btn-arrows.link-modal(href="#modal-welcome") Читать полностью
 			.swiper-pagination
 	// end sWelcome

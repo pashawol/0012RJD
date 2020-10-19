@@ -126,51 +126,21 @@
 		flex-grow: 1;
 	}
 	
-	&__back {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		left: 0;
-		top: 0;
-		@include mt(.5);
-		backface-visibility: hidden;
-		padding: rem(20);
-		@include media-breakpoint-up(sm) {
-			transform: rotateY(180deg);
-			display: flex;
-			flex-direction: column;
-			padding: rem(22px) rem(21) rem(28) rem(20);
-		}
-			@include media-breakpoint-down(sm){
-				display: none;
-			}
-		.sSpeakersCard__text{
-			@include ell(16);
-			@include media-breakpoint-down(sm) {
-				display: none;
-			}
-		}
-		.sSpeakersCard__title{
-			@include media-breakpoint-down(sm) {
-				display: none;
-			}
-		}
-	}
-
+ 
 	&__front {
 		.sSpeakersCard__text{
-			@include ell(3);
+			// @include ell(3);
 		}
 	}
 
-	@include media-breakpoint-up(sm) {
-		&:hover &__front, &:focus &__front, &:active &__front{
-			transform: rotateY(180deg);
-		}
-		&:hover &__back, &:focus &__back, &:active &__back{
-			transform: rotateY(360deg);
-		}
-	}
+	// @include media-breakpoint-up(sm) {
+	// 	&:hover &__front, &:focus &__front, &:active &__front{
+	// 		transform: rotateY(180deg);
+	// 	}
+	// 	&:hover &__back, &:focus &__back, &:active &__back{
+	// 		transform: rotateY(360deg);
+	// 	}
+	// }
 
 	&__img-wrap {
 		background: #242E42;

@@ -55,9 +55,14 @@ mixin sEvents-12()
 					if k
 						+e.whatHappen= k
 			.tabs-inner
-				.tabs-inner__caption
-					.tabs-inner__btn.active 22 октября
-					.tabs-inner__btn 23 октября
+				.row
+					.col
+						.tabs-inner__caption
+							
+							.tabs-inner__btn.active 22 октября
+							.tabs-inner__btn 23 октября
+					.col-auto
+						a.btn.btn-primary(href="#") Скачать pdf
 					mixin content2()
 						.tabs-inner__content&attributes(attributes)
 							.row
