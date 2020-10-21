@@ -272,7 +272,10 @@
 
 			}
 			.d-flex.mw-100 {
-				padding: 1rem 1.5rem;
+					@include media-breakpoint-up(sm) {
+
+						padding: 1rem 1rem;
+					}
 			}
 			.public-chat-messages {
 				height: calc(#{rem(493)} - 30px);
