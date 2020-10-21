@@ -267,7 +267,13 @@
 			.public-chat-message-name {
 				@include ellips;
 			}
+			.public-chat-messages{
+				padding: .5rem 0 !important;
 
+			}
+			.d-flex.mw-100 {
+				padding: 1rem 1.5rem;
+			}
 			.public-chat-messages {
 				height: calc(#{rem(493)} - 30px);
 
@@ -276,7 +282,7 @@
 			.public-chat-pinned {
 
 				.d-flex {
-					margin-bottom: rem(25);
+					// margin-bottom: rem(25);
 					cursor: pointer;
 				}
 			}
